@@ -1,0 +1,45 @@
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+header {
+    background-color: rgba(117, 117, 117, 0.4);
+    grid-area: 1 / 1 / 2 / 9;
+    height: 120px;
+    border: thin solid black;
+}
+
+nav {
+    background-color: rgba(28, 138, 205, 0.4);
+    grid-area: 2 / 1 / 3 / 9;
+    height: 50px;
+    border: thin solid black;
+}
+
+main {
+    background-color: rgba(207, 144, 144, 0.4);
+    grid-area: 3 / 1 / 4 / 9;
+    height: 1200px;
+    border: thin solid black;
+}
+
+footer {
+    background-color: rgba(164, 204, 155, 0.4);
+    grid-area: 4 / 1 / 5 / 9;
+    height: 230px;
+    border: thin solid black;
+}
+
+#Lmargin {
+    background-color: rgba(254, 202, 100, 0.4);
+    grid-area: 1 / 1 / 5 / 2;
+    border: thin solid black;
+}
+
+#Rmargin {
+    background-color: rgba(254, 202, 100, 0.4);
+    grid-area: 1 / 8 / 5 / 9;
+    border: thin solid black;
+}
