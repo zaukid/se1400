@@ -25,20 +25,25 @@ header div {
     padding: 0;
 }
 
-header div input {
-    background-color: #D6F0FF;
-    border: 2px 0 2px 2px;
-    border-right: hidden;
-    border-radius: 10px 0 0 10px;
-    font-size: 25pt;
+.search {
+    width: max-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #D6F0FF;
+    border: 1px solid black;
 }
 
-header div button {
-    background-color: #D6F0FF;
-    border: 2px 2px 2px 0;
-    border-left: hidden;
-    border-radius: 0 10px 10px 0;
-    height: 50px;
+.search-input {
+    font-size: 16px;
+    font-family: "Space Grotesk";
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
 }
 
 header h1 {
