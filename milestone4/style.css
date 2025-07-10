@@ -93,6 +93,19 @@ nav ul li {
     white-space: nowrap;
 }
 
+a {
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.previous {
+    color: black;
+}
+
+.next {
+    color: black;
+}
+
 main {
     background-color: white;
     grid-area: 3 / 1 / 4 / 9;
@@ -142,17 +155,20 @@ main div img[alt="game1"] {
     border: 4px solid black;
     border-radius: 10%;
     box-shadow: 8px 8px #D91C9C;
+    object-fit: contain;
 }
 
 main div img[alt="game2"] {
     border: 4px solid black;
     border-radius: 10%;
     margin: 0 50px;
+    object-fit: contain;
 }
 
 main div img[alt="game3"] {
     border: 4px solid black;
     border-radius: 10%;
+    object-fit: contain;
 }
 
 #redband {
