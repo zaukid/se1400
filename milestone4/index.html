@@ -5,26 +5,19 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <title>Beyond the Board</title>
 </head>
 
 <body>
     <div id="wrapper">
-        <header>
+        <header class="flex-cntr">
             <h1>Beyond the Board</h1>
-            <!--<img src="searchbar.png" alt="search">-->
             <form>
                 <div class="search">
-                    <span class="material-symbols-outlined">search</span>
                     <input class="search-input" type="search" placeholder="Search for products…">
+                    <button type="submit"><img src="magnify.png" alt="submit"></button>
                 </div>
             </form>
-            <!--<div>
-                <input type="search" name="search" placeholder="    Search for products…">
-                <button type="submit"><img src="magnify.png" alt="submit" size="50"></button>
-            </div>-->
             <a href=" cart.html"><img id="shopping-cart" src="shoppingcart.png" alt="cart"></a>
             <a href="account.html"><img id="account-icon" src="accounticon.png" alt="account"></a>
         </header>
@@ -32,25 +25,26 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="browse.html">Browse</a></li>
-                <li><a href="new release.html">New Release</a></li>
+                <li><a href="newrelease.html">New Release</a></li>
                 <li><a href="deals.html">Deals</a></li>
                 <li><a href="parts.html">Parts</a></li>
-                <li><a href="about btb.html">About BtB</a></li>
+                <li><a href="aboutbtb.html">About BtB</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Best Sellers</h2>
-            <div class="button">
-                <a href="#" class="previous round">&#8249;</a>
-                <a href="#" class="next round">&#8250;</a>
+            <div class="flex-cntr">
+                <h2 class="ltrttxt">Best Sellers</h2>
+                <button class="ltrtbtn" type="button"><img src="leftarrow.png" alt="left"></button>
+                <button class="ltrtbtn" type="button"><img src="rightarrow.png" alt="right"></button>
             </div>
-            <div>
-                <img src="wordcrushlogo.png" alt="game1">
+            <div class="previews">
+                <img class="prevshadow" src="wordcrushlogo.png" alt="game1">
                 <img src="diecasterlogo.png" alt="game2">
                 <img src="nextbestlogo.png" alt="game3">
             </div>
             <h3>Word Crush</h3>
             <h4>Brain crippling word recall game</h4>
+            <button class="detailbtn" type="button">Details…</button>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
