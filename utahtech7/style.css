@@ -114,6 +114,31 @@ main {
     background-color: #ffffff;
 }
 
+table {
+    margin: 0 auto;
+    border: 1px solid #424242;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid #424242;
+}
+
+td {
+    text-align: center;
+}
+
+text {
+    text-align: left;
+}
+
+table tr:nth-of-type {
+    background-color: #F3F3F3;
+}
+
 form {
     display: grid;
     grid-template-rows: auto;
