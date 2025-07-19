@@ -122,14 +122,7 @@ form {
     width: 100%;
 }
 
-input {
-    font-size: 1rem;
-    padding: 10px;
-    color: #666666;
-    background-color: #fafafa;
-    border: none;
-}
-
+input,
 textarea {
     font-size: 1rem;
     padding: 10px;
@@ -138,7 +131,8 @@ textarea {
     border: none;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
     background-color: #f0f0f0;
 }
@@ -271,6 +265,10 @@ dt {
     }
 
     #facultyhero {
+        display: none;
+    }
+
+    #alumnihero {
         display: none;
     }
 }
