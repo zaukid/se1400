@@ -252,6 +252,12 @@ dt {
         flex-flow: column nowrap;
     }
 
+    #homehero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
     #alumnihero {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
@@ -290,6 +296,10 @@ dt {
     }
 
     #homehero {
+        display: none;
+    }
+
+    #alumnihero {
         display: none;
     }
 
