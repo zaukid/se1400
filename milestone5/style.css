@@ -258,12 +258,12 @@ footer h2 {
     color: black;
     font-size: 48pt;
     font-weight: bold;
-    justify-self: center;
+    text-align: center;
 }
 
 footer div {
-    margin-bottom: 50px;
-    justify-self: center;
+    margin: 0 auto 50px auto;
+    width: 525px;
 }
 
 footer input {
@@ -419,6 +419,10 @@ footer button {
 
     footer h2 {
         font-size: 30px;
+    }
+
+    footer div {
+        width: 350px;
     }
 
     footer input {
