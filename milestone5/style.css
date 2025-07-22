@@ -144,7 +144,6 @@ main div[id="sellers"] {
     color: black;
     font-size: 48pt;
     font-weight: bold;
-    white-space: nowrap;
     text-align: left;
     text-decoration: underline;
     text-decoration-color: #FECA64;
@@ -304,7 +303,7 @@ footer button {
     }
 
     .search-input {
-        width: 220px;
+        width: 150px;
     }
 
     #shopping-cart {
@@ -382,15 +381,17 @@ footer button {
     }
 
     .search-input {
-        width: 220px;
+        width: 150px;
     }
 
     #shopping-cart {
         top: 0;
+        left: 150px;
     }
 
     #account-icon {
         top: 0;
+        left: 150px;
     }
 
     nav {
