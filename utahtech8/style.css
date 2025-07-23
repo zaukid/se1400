@@ -70,7 +70,6 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-align: center;
-    transition: background-color 0.5s ease-out;
 }
 
 nav ul {
@@ -87,6 +86,7 @@ nav ul li {
 
 nav a:hover {
     background-color: #BA1C21;
+    transition: background-color 0.5s ease-out;
 }
 
 footer {
