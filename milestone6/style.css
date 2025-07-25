@@ -130,6 +130,10 @@ nav ul[id=“shortnav”] {
 
 #aboutbtb {
     text-align: center;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 main {
