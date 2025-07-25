@@ -128,14 +128,6 @@ nav ul[id=“shortnav”] {
     display: none;
 }
 
-#aboutbtb {
-    text-align: center;
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: auto;
-}
-
 main {
     background-color: white;
     display: grid;
