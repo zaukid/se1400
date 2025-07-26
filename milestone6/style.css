@@ -137,6 +137,20 @@ main[id="aboutbtb"] h2 {
     padding-top: 20px;
 }
 
+#browse {
+    display: grid;
+}
+
+main[id="browse"] {
+    font-size: 28pt;
+    padding-top: 20px;
+    grid-template-columns: repeat(4, minmax(0px, auto));
+}
+
+main[id="browse"] button {
+    padding-bottom: 20px;
+}
+
 main {
     background-color: white;
     display: grid;
