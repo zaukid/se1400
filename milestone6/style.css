@@ -170,13 +170,31 @@ main[id="aboutbtb"] h2 {
 }
 
 main[id="browse"] {
-    font-size: 28pt;
     padding-top: 20px;
-    grid-template-columns: repeat(4, minmax(0px, auto));
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+main[id="browse"] h3 {
+    font-size: 20pt;
+    margin: 5px 0;
 }
 
 main[id="browse"] button {
-    padding-bottom: 20px;
+    margin: 0 0 25px 0;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: #D6F0FF;
+}
+
+main[id="browse"] img {
+    border: 4px solid black;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+main[id="browse"] p {
+    margin: 0;
 }
 
 main {

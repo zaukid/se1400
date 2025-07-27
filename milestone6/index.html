@@ -6,6 +6,7 @@
 	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="constants.js"></script>
 	<title>Beyond the Board</title>
 </head>
 
@@ -68,44 +69,47 @@
 				<h2 class="ltrttxt">Best Sellers</h2>
 			</div>
 			<div class="flex-cntr" id="LRarrows">
-				<button class="ltrtbtn" type="button"><img src="leftarrow.png" alt="left"></button>
-				<button class="ltrtbtn" type="button"><img src="rightarrow.png" alt="right"></button>
+				<button class="ltrtbtn" id="leftArrow"><img src="leftarrow.png" alt="left"></button>
+				<button class="ltrtbtn" id="rightArrow"><img src="rightarrow.png" alt="right"></button>
 			</div>
 			<div class="flex-cntr" id="previewsicons">
 				<picture>
-					<source media="(min-width:1200px)" srcset="wordcrushlogo.png">
-					<source media="(min-width:768px)" srcset="wordcrushlogo-md.png">
-					<img class="prevshadow" src="wordcrushlogo-sm.png" alt="game1" style="width:auto">
+					<source media="(min-width:1200px)" id="ltGameLogoDisplayLg" srcset="wordcrushlogo.png">
+					<source media="(min-width:768px)" id="ltGameLogoDisplayMd" srcset="wordcrushlogo-md.png">
+					<img class="prevshadow" id="ltGameLogoDisplaySm" src="wordcrushlogo-sm.png" alt="game1"
+						style="width:auto">
 				</picture>
 				<picture>
-					<source media="(min-width:1200px)" srcset="diecasterlogo.png">
-					<source media="(min-width:768px)" srcset="diecasterlogo-md.png">
-					<img src="diecasterlogo-sm.png" alt="game2" style="width:auto">
+					<source media="(min-width:1200px)" id="ctrGameLogoDisplayLg" srcset="diecasterlogo.png">
+					<source media="(min-width:768px)" id="ctrGameLogoDisplayMd" srcset="diecasterlogo-md.png">
+					<img id="ctrGameLogoDisplaySm" src="diecasterlogo-sm.png" alt="game2" style="width:auto">
 				</picture>
 				<picture>
-					<source media="(min-width:1200px)" srcset="nextbestlogo.png">
-					<source media="(min-width:768px)" srcset="nextbestlogo-md.png">
-					<img src="nextbestlogo-sm.png" alt="game3" style="width:auto">
+					<source media="(min-width:1200px)" id="rtGameLogoDisplayLg" srcset="nextbestlogo.png">
+					<source media="(min-width:768px)" id="rtGameLogoDisplayMd" srcset="nextbestlogo-md.png">
+					<img id="rtGameLogoDisplaySm" src="nextbestlogo-sm.png" alt="game3" style="width:auto">
 				</picture>
 			</div>
 			<div id="prevdesciptbutton">
-				<h3>Word Crush</h3>
-				<h4>Brain crippling word recall game</h4>
+				<h3 id="Title">Word Crush</h3>
+				<h4 id="Biline">Brain crippling word recall game</h4>
 				<button class="detailbtn" type="button">Details…</button>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-				id est
-				laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-				ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-				id est
-				laborum.</p>
+			<p id="Details"><b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min</b> Be the first to discard your
+				whole hand to win this brain taxing memory game. Take five minutes to learn the rules and set the game
+				up. Then let the grey matter get its workout in. A good memory is helpful, but to win you'll need to
+				plan ahead and make a few good strategic moves. Impress yourself and your friends by reciting a long
+				list of random words. Or forget a single word and watch your hand grow and your mind shrivel. Players
+				hold word cards in their hands which are played alphabetically as play proceeds. Each time a player adds
+				to the string of previously played cards, he must recite the words on the cards beneath the one he's
+				playing. But hold on! Words are not just alphabetical by their first letter. They can also be played if
+				their word contains a double of the active letter. For example, if F is the active letter, FOGGY can be
+				played, but so can CAFFEINE. Players who fail to correctly recite the word stack add any unrecited words
+				to their own hands. Word Crush outcomes can become unpredictable and frustrating. Best laid plans can be
+				laid to waste in a moment. One forgotten or misremembered word cam mean inevitable defeat.
+				Extraordinarily competitive games can built word lists that cycle through the entire alphabet, and then
+				some. When you win a game of Word Crush, you'll leave feeling like it was all you. Lady Luck had nothing
+				to do with it.</p>
 		</main>
 		<footer>
 			<hr id="redband">
@@ -119,5 +123,145 @@
 		</footer>
 	</div>
 </body>
+<script>
+	let ltGameCounter = 0;
+	let ctrGameCounter = 1;
+	let rtGameCounter = 2;
+
+	const gameLogosSm = [
+		'wordcrushlogo-sm.png',
+		'diecasterlogo-sm.png',
+		'nextbestlogo-sm.png',
+		'mysterypersonalogo-sm.png',
+		'shortandsweetlogo-sm.png',
+		'snakeyesandboxcarlogo-sm.png',
+		'twototangologo-sm.png'
+	];
+	const gameLogosMd = [
+		'wordcrushlogo-md.png',
+		'diecasterlogo-md.png',
+		'nextbestlogo-md.png',
+		'mysterypersonalogo-md.png',
+		'shortandsweetlogo-md.png',
+		'snakeyesandboxcarlogo-md.png',
+		'twototangologo-md.png'
+	];
+	const gameLogosLg = [
+		'wordcrushlogo.png',
+		'diecasterlogo.png',
+		'nextbestlogo.png',
+		'mysterypersonalogo.png',
+		'shortandsweetlogo.png',
+		'snakeyesandboxcarlogo.png',
+		'twototangologo.png'
+	];
+	const Title = [
+		wordcrushtitle,
+		diecastertitle,
+		nextbesttitle,
+		mysterypersonatitle,
+		shortandsweettitle,
+		snakeyesandboxcartitle,
+		twototangotitle
+	];
+	const Biline = [
+		wordcrushbiline,
+		diecasterbiline,
+		nextbestbiline,
+		mysterypersonabiline,
+		shortandsweetbiline,
+		snakeyesandboxcarbiline,
+		twototangobiline
+	];
+	const Details = [
+		wordcrushdetails,
+		diecasterdetails,
+		nextbestdetails,
+		mysterypersonadetails,
+		shortandsweetdetails,
+		snakeyesandboxcardetails,
+		twototangodetails
+	];
+
+	const ltGameLogoDisplaySm = document.getElementById('ltGameLogoDisplaySm');
+	const ltGameLogoDisplayMd = document.getElementById('ltGameLogoDisplayMd');
+	const ltGameLogoDisplayLg = document.getElementById('ltGameLogoDisplayLg');
+
+	const ctrGameLogoDisplaySm = document.getElementById('ctrGameLogoDisplaySm');
+	const ctrGameLogoDisplayMd = document.getElementById('ctrGameLogoDisplayMd');
+	const ctrGameLogoDisplayLg = document.getElementById('ctrGameLogoDisplayLg');
+
+	const rtGameLogoDisplaySm = document.getElementById('rtGameLogoDisplaySm');
+	const rtGameLogoDisplayMd = document.getElementById('rtGameLogoDisplayMd');
+	const rtGameLogoDisplayLg = document.getElementById('rtGameLogoDisplayLg');
+
+	const gameTitle = document.getElementById('Title');
+	const gameBiline = document.getElementById('Biline');
+	const gameDetails = document.getElementById('Details');
+
+	document.getElementById('leftArrow').addEventListener('click', () => {
+		ltGameCounter--;
+		ctrGameCounter--;
+		rtGameCounter--;
+
+		if (ltGameCounter < 0) {
+			ltGameCounter = gameLogosSm.length - 1; //<!--Loop back to the last game logo-->//
+		}
+		if (ctrGameCounter < 0) {
+			ctrGameCounter = gameLogosSm.length - 1; //< !--Loop back to the last game logo-- >//
+		}
+		if (rtGameCounter < 0) {
+			rtGameCounter = gameLogosSm.length - 1; //< !--Loop back to the last game logo-- >//
+		}
+
+		ltGameLogoDisplaySm.src = gameLogosSm[ltGameCounter];
+		ltGameLogoDisplayMd.srcset = gameLogosMd[ltGameCounter];
+		ltGameLogoDisplayLg.srcset = gameLogosLg[ltGameCounter];
+
+		ctrGameLogoDisplaySm.src = gameLogosSm[ctrGameCounter];
+		ctrGameLogoDisplayMd.srcset = gameLogosMd[ctrGameCounter];
+		ctrGameLogoDisplayLg.srcset = gameLogosLg[ctrGameCounter];
+
+		rtGameLogoDisplaySm.src = gameLogosSm[rtGameCounter];
+		rtGameLogoDisplayMd.srcset = gameLogosMd[rtGameCounter];
+		rtGameLogoDisplayLg.srcset = gameLogosLg[rtGameCounter];
+
+		gameTitle.textContent = Title[ltGameCounter];
+		gameBiline.textContent = Biline[ltGameCounter];
+		gameDetails.innerHTML = Details[ltGameCounter];
+	});
+
+	document.getElementById('rightArrow').addEventListener('click', () => {
+		ltGameCounter++;
+		ctrGameCounter++;
+		rtGameCounter++;
+
+		if (ltGameCounter >= gameLogosSm.length) {
+			ltGameCounter = 0; //< !--Loop back to the first game logo-- >
+		}
+		if (ctrGameCounter >= gameLogosSm.length) {
+			ctrGameCounter = 0; //< !--Loop back to the first game logo-- >
+		}
+		if (rtGameCounter >= gameLogosSm.length) {
+			rtGameCounter = 0;//< !--Loop back to the first game logo-- >
+		}
+
+		ltGameLogoDisplaySm.src = gameLogosSm[ltGameCounter];
+		ltGameLogoDisplayMd.srcset = gameLogosMd[ltGameCounter];
+		ltGameLogoDisplayLg.srcset = gameLogosLg[ltGameCounter];
+
+		ctrGameLogoDisplaySm.src = gameLogosSm[ctrGameCounter];
+		ctrGameLogoDisplayMd.srcset = gameLogosMd[ctrGameCounter];
+		ctrGameLogoDisplayLg.srcset = gameLogosLg[ctrGameCounter];
+
+		rtGameLogoDisplaySm.src = gameLogosSm[rtGameCounter];
+		rtGameLogoDisplayMd.srcset = gameLogosMd[rtGameCounter];
+		rtGameLogoDisplayLg.srcset = gameLogosLg[rtGameCounter];
+
+		gameTitle.textContent = Title[ltGameCounter];
+		gameBiline.textContent = Biline[ltGameCounter];
+		gameDetails.innerHTML = Details[ltGameCounter];
+	});
+</script>
 
 </html>
