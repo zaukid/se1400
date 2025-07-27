@@ -25,6 +25,25 @@
 			<a href="account.html"><img id="account-icon" src="accounticon.png" alt="account"></a>
 		</div>
 		<nav>
+			<div class="hamburger" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li><a href="newrelease.html">New</a></li>
+				<li><a href="deals.html">Deals</a></li>
+				<li><a href="parts.html">Parts</a></li>
+				<li><a href="aboutbtb.html">About</a></li>
+			</ul>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+					document.querySelector(".menu").classList.toggle("visible");
+				}
+			</script>
 			<ul id=“longnav”>
 				<li id="longhome"><a href="index.html">Home</a></li>
 				<li><a href="browse.html">Browse</a></li>

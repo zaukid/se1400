@@ -128,6 +128,33 @@ nav ul[id=“shortnav”] {
     display: none;
 }
 
+.menu {
+    display: none;
+}
+
+.menu.visible {
+    display: block;
+    list-style-type: none;
+    background-color: #e8e9f1;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    height: 5px;
+    background-color: black;
+    transition: 0.4s;
+}
+
 #aboutbtb {
     display: block;
 }
@@ -425,6 +452,7 @@ footer button {
 
     nav ul[id=“shortnav”] {
         flex-flow: column nowrap;
+        display: none;
     }
 
     nav ul li {
