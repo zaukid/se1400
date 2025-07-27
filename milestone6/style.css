@@ -139,6 +139,7 @@ nav ul[id=“shortnav”] {
 }
 
 .hamburger {
+    visibility: hidden;
     cursor: pointer;
     width: 35px;
     height: 30px;
@@ -364,6 +365,10 @@ footer button {
         top: 0;
     }
 
+    .hamburger {
+        visibility: hidden;
+    }
+
     nav {
         grid-row: 3 / 4;
         grid-column: 1 / 9;
@@ -442,6 +447,10 @@ footer button {
     #account-icon {
         top: 0;
         left: 150px;
+    }
+
+    .hamburger {
+        visibility: visible;
     }
 
     nav {
