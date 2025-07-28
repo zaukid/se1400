@@ -23,6 +23,13 @@ button:hover {
     list-style-type: none;
 }
 
+.txt18just {
+    color: #0F4768;
+    font-size: 18pt;
+    text-align: justify;
+    text-justify: auto;
+}
+
 header {
     background-image: url(BtBLogo.png);
     min-height: 120px;
@@ -45,6 +52,7 @@ header h1 {
 }
 
 div[id="searchcartaccount"] form {
+    z-index: 2;
     margin: 30px 30px 0 5px;
     padding: 0;
 }
@@ -87,16 +95,16 @@ div[class="search"] button {
 
 .snipcart-items-count {
     position: relative;
-    background-color: #FECA64;
-    color: black;
-    right: 10px;
+    background-color: #e8e9f1;
+    color: #1c8acc;
+    /*right: 10px;
     bottom: 20px;
     border: 40px;
     border-radius: 50%;
     margin-top: 25px;
     margin-right: 10px;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 
 #account-icon {
@@ -104,6 +112,10 @@ div[class="search"] button {
     height: 75px;
     width: 75px;
     top: 20px;
+}
+
+div [id="searchcartaccount"] a {
+    text-decoration: none;
 }
 
 nav {
@@ -128,14 +140,38 @@ nav ul li {
     white-space: nowrap;
 }
 
-nav ul[id=“longnav”] {
+nav ul[id="hamnav"] {
+    display: none;
+    list-style-type: none;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul[id="hamnav"] li ul {
+    display: none;
+    background-color: #e8e9f1;
+    list-style-type: none;
+    flex-flow: column nowrap;
+    position: absolute;
+    width: 100%;
+}
+
+nav ul[id="hamnav"] li:hover ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 10px;
+    margin: 0;
+}
+
+nav ul[id="longnav"] {
     margin-top: 0.2em;
     display: flex;
     flex-flow: row nowrap;
     list-style-type: none;
 }
 
-nav ul[id=“shortnav”] {
+nav ul[id="shortnav"] {
     margin-top: 0.2em;
     flex-flow: row nowrap;
     list-style-type: none;
@@ -144,6 +180,10 @@ nav ul[id=“shortnav”] {
 
 .menu {
     display: none;
+}
+
+nav ul [class="menu"] {
+    margin: 0;
 }
 
 .menu.visible {
@@ -166,7 +206,7 @@ nav ul[id=“shortnav”] {
 .bar2,
 .bar3 {
     height: 5px;
-    background-color: black;
+    background-color: #D91C9C;
     transition: 0.4s;
 }
 
@@ -174,7 +214,8 @@ nav ul[id=“shortnav”] {
     display: block;
 }
 
-main[id="aboutbtb"] h2 {
+main[id="aboutbtb"] h2,
+main[id="browse"] h2 {
     font-size: 32pt;
     padding-top: 20px;
 }
@@ -185,7 +226,7 @@ main[id="aboutbtb"] h2 {
 
 main[id="browse"] {
     padding-top: 20px;
-    column-gap: 20px;
+    column-gap: 35px;
     grid-template-columns: auto auto;
 }
 
@@ -346,6 +387,9 @@ main h4 {
     box-shadow: 4px 4px #1C8ACD;
     border-radius: 40px;
     font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    text-align: center;
     margin: 0;
     padding: 10px 25px;
 }
@@ -429,19 +473,7 @@ footer button {
     }
 
     div[id="searchcartaccount"] form {
-        margin: 10px 0 0 40px;
-    }
-
-    .search-input {
-        width: 150px;
-    }
-
-    #shopping-cart {
-        top: 0;
-    }
-
-    #account-icon {
-        top: 0;
+        margin: 30px 30px 0 40px;
     }
 
     .hamburger {
@@ -461,6 +493,10 @@ footer button {
         padding: 0 0.4em;
     }
 
+    nav ul li[id="hamhome"] {
+        padding: 20px 0 0 0;
+    }
+
     nav ul li[id="longhome"] {
         padding: 0 0.4em 0 0;
     }
@@ -469,11 +505,11 @@ footer button {
         padding: 0 0.4em 0 0;
     }
 
-    nav ul[id=“longnav”] {
+    nav ul[id="longnav"] {
         display: none;
     }
 
-    nav ul[id=“shortnav”] {
+    nav ul[id="shortnav"] {
         display: flex;
     }
 
@@ -504,10 +540,10 @@ footer button {
     }
 
     #searchcartaccount {
-        padding-top: 25px;
-        flex-flow: column;
+        padding-top: 0;
+        flex-flow: row;
         grid-row: 2 / 3;
-        grid-column: 4 / 9;
+        grid-column: 3 / 9;
     }
 
     div[id="searchcartaccount"] form {
@@ -520,26 +556,35 @@ footer button {
 
     #shopping-cart {
         top: 0;
-        left: 150px;
+        margin: 0;
+        padding: 0;
     }
 
     #account-icon {
         top: 0;
-        left: 150px;
+        margin: 0;
+        padding: 0;
     }
 
     .hamburger {
         visibility: visible;
     }
 
-    nav {
-        position: static;
-        grid-row: 2 / 3;
-        grid-column: 1 / 4;
+    div [class="hamburger"] {
+        margin: 20px 0 0 25px;
     }
 
-    nav ul[id=“shortnav”] {
-        flex-flow: column nowrap;
+    nav {
+        position: relative;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    nav ul[id="hamnav"] {
+        display: flex;
+    }
+
+    nav ul[id="shortnav"] {
         display: none;
     }
 
@@ -550,6 +595,10 @@ footer button {
     main {
         grid-row: 3 / 4;
         grid-column: 2 / 8;
+    }
+
+    main[id="browse"] {
+        grid-template-columns: auto;
     }
 
     footer {

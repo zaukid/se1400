@@ -30,11 +30,10 @@
 				<img id="shopping-cart" src="shoppingcart.png" alt="cart">
 				<span class="snipcart-items-count"></span>
 			</a>
-			<!--<a href="cart.html"><img id="shopping-cart" src="shoppingcart.png" alt="cart"></a>-->
 			<a href="account.html"><img id="account-icon" src="accounticon.png" alt="account"></a>
 		</div>
 		<nav>
-			<div class="hamburger" onclick="myFunction(this)">
+			<!--<div class="hamburger" onclick="myFunction(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
@@ -52,8 +51,26 @@
 					x.classList.toggle("change");
 					document.querySelector(".menu").classList.toggle("visible");
 				}
-			</script>
-			<ul id=“longnav”>
+			</script>-->
+			<ul id="hamnav">
+				<li><a href="#">
+						<div class="hamburger">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</a>
+					<ul>
+						<li id="hamhome"><a href="index.html">Home</a></li>
+						<li><a href="browse.html">Browse</a></li>
+						<li><a href="newrelease.html">New</a></li>
+						<li><a href="deals.html">Deals</a></li>
+						<li><a href="parts.html">Parts</a></li>
+						<li><a href="aboutbtb.html">About</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul id="longnav">
 				<li id="longhome"><a href="index.html">Home</a></li>
 				<li><a href="browse.html#gameslink">Browse</a></li>
 				<li><a href="browse.html#newlink">New Releases</a></li>
@@ -62,8 +79,8 @@
 				<li><a href="aboutbtb.html">About BtB</a></li>
 			</ul>
 			<!-- shortened navigation list -->
-			<ul id=“shortnav”>
-				<li id="shorthome"><a href="index.html">Home</a></li>
+			<ul id="shortnav">
+				<li id=" shorthome"><a href="index.html">Home</a></li>
 				<li><a href="browse.html#gameslink">Browse</a></li>
 				<li><a href="browse.html#newlink">New</a></li>
 				<li><a href="browse.html#dealslink">Deals</a></li>
@@ -101,7 +118,7 @@
 			<div id="prevdesciptbutton">
 				<h3 id="Title">Word Crush</h3>
 				<h4 id="Biline">Brain crippling word recall game</h4>
-				<button class="detailbtn" type="button">Details…</button>
+				<a id="Link" class="detailbtn" href="browse.html#wordcrushlink">Details…</a>
 			</div>
 			<p id="Brief"><b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min</b> Be the first to discard your
 				whole hand to win this brain taxing memory game.</p>
@@ -193,6 +210,16 @@
 		twototangodetails,
 		doubledicederbydetails
 	];
+	const Link = [
+		'browse.html#wordcrushlink',
+		'browse.html#diecasterlink',
+		'browse.html#nextbestlink',
+		'browse.html#mysterypersonalink',
+		'browse.html#shortandsweetlink',
+		'browse.html#snakeyesandboxcarlink',
+		'browse.html#twototangolink',
+		'browse.html#doubledicederbylink'
+	];
 
 	const ltGameLogoDisplaySm = document.getElementById('ltGameLogoDisplaySm');
 	const ltGameLogoDisplayMd = document.getElementById('ltGameLogoDisplayMd');
@@ -207,9 +234,9 @@
 	const rtGameLogoDisplayLg = document.getElementById('rtGameLogoDisplayLg');
 
 	const gameTitle = document.getElementById('Title');
-	const gameBrief = document.getElementById('Brief');
 	const gameBiline = document.getElementById('Biline');
-	const gameDetails = document.getElementById('Details');
+	const gameBrief = document.getElementById('Brief');
+	const gameLink = document.getElementById('Link');
 
 	document.getElementById('leftArrow').addEventListener('click', () => {
 		ltGameCounter--;
@@ -241,6 +268,7 @@
 		gameTitle.textContent = Title[ltGameCounter];
 		gameBiline.textContent = Biline[ltGameCounter];
 		gameBrief.innerHTML = Brief[ltGameCounter];
+		gameLink.href = Link[ltGameCounter];
 	});
 
 	document.getElementById('rightArrow').addEventListener('click', () => {
@@ -273,6 +301,7 @@
 		gameTitle.textContent = Title[ltGameCounter];
 		gameBiline.textContent = Biline[ltGameCounter];
 		gameBrief.innerHTML = Brief[ltGameCounter];
+		gameLink.href = Link[ltGameCounter];
 	});
 </script>
 
