@@ -6,8 +6,6 @@
 	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-	<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 	<script src="constants.js"></script>
 	<title>Beyond the Board</title>
 </head>
@@ -24,13 +22,7 @@
 					<button type="submit"><img src="magnify.png" alt="submit"></button>
 				</div>
 			</form>
-			<div hidden id="snipcart"
-				data-api-key="YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw"></div>
-			<a href="#" class="snipcart-checkout">
-				<img id="shopping-cart" src="shoppingcart.png" alt="cart">
-				<span class="snipcart-items-count"></span>
-			</a>
-			<!--<a href="cart.html"><img id="shopping-cart" src="shoppingcart.png" alt="cart"></a>-->
+			<a href="cart.html"><img id="shopping-cart" src="shoppingcart.png" alt="cart"></a>
 			<a href="account.html"><img id="account-icon" src="accounticon.png" alt="account"></a>
 		</div>
 		<nav>
@@ -55,18 +47,18 @@
 			</script>
 			<ul id=“longnav”>
 				<li id="longhome"><a href="index.html">Home</a></li>
-				<li><a href="browse.html#gameslink">Browse</a></li>
-				<li><a href="browse.html#newlink">New Releases</a></li>
-				<li><a href="browse.html#dealslink">Deals</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li><a href="newrelease.html">New Releases</a></li>
+				<li><a href="deals.html">Deals</a></li>
 				<li><a href="parts.html">Parts</a></li>
 				<li><a href="aboutbtb.html">About BtB</a></li>
 			</ul>
 			<!-- shortened navigation list -->
 			<ul id=“shortnav”>
 				<li id="shorthome"><a href="index.html">Home</a></li>
-				<li><a href="browse.html#gameslink">Browse</a></li>
-				<li><a href="browse.html#newlink">New</a></li>
-				<li><a href="browse.html#dealslink">Deals</a></li>
+				<li><a href="browse.html">Browse</a></li>
+				<li><a href="newrelease.html">New</a></li>
+				<li><a href="deals.html">Deals</a></li>
 				<li><a href="parts.html">Parts</a></li>
 				<li><a href="aboutbtb.html">About</a></li>
 			</ul>
@@ -103,8 +95,21 @@
 				<h4 id="Biline">Brain crippling word recall game</h4>
 				<button class="detailbtn" type="button">Details…</button>
 			</div>
-			<p id="Brief"><b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min</b> Be the first to discard your
-				whole hand to win this brain taxing memory game.</p>
+			<p id="Details"><b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min</b> Be the first to discard your
+				whole hand to win this brain taxing memory game. Take five minutes to learn the rules and set the game
+				up. Then let the grey matter get its workout in. A good memory is helpful, but to win you'll need to
+				plan ahead and make a few good strategic moves. Impress yourself and your friends by reciting a long
+				list of random words. Or forget a single word and watch your hand grow and your mind shrivel. Players
+				hold word cards in their hands which are played alphabetically as play proceeds. Each time a player adds
+				to the string of previously played cards, he must recite the words on the cards beneath the one he's
+				playing. But hold on! Words are not just alphabetical by their first letter. They can also be played if
+				their word contains a double of the active letter. For example, if F is the active letter, FOGGY can be
+				played, but so can CAFFEINE. Players who fail to correctly recite the word stack add any unrecited words
+				to their own hands. Word Crush outcomes can become unpredictable and frustrating. Best laid plans can be
+				laid to waste in a moment. One forgotten or misremembered word cam mean inevitable defeat.
+				Extraordinarily competitive games can built word lists that cycle through the entire alphabet, and then
+				some. When you win a game of Word Crush, you'll leave feeling like it was all you. Lady Luck had nothing
+				to do with it.</p>
 		</main>
 		<footer>
 			<hr id="redband">
@@ -130,8 +135,7 @@
 		'mysterypersonalogo-sm.png',
 		'shortandsweetlogo-sm.png',
 		'snakeyesandboxcarlogo-sm.png',
-		'twototangologo-sm.png',
-		'doubledicederbylogo-sm.png'
+		'twototangologo-sm.png'
 	];
 	const gameLogosMd = [
 		'wordcrushlogo-md.png',
@@ -140,18 +144,16 @@
 		'mysterypersonalogo-md.png',
 		'shortandsweetlogo-md.png',
 		'snakeyesandboxcarlogo-md.png',
-		'twototangologo-md.png',
-		'doubledicederbylogo-md.png'
+		'twototangologo-md.png'
 	];
 	const gameLogosLg = [
-		'wordcrushlogo-lg.png',
-		'diecasterlogo-lg.png',
-		'nextbestlogo-lg.png',
-		'mysterypersonalogo-lg.png',
-		'shortandsweetlogo-lg.png',
-		'snakeyesandboxcarlogo-lg.png',
-		'twototangologo-lg.png',
-		'doubledicederbylogo-lg.png'
+		'wordcrushlogo.png',
+		'diecasterlogo.png',
+		'nextbestlogo.png',
+		'mysterypersonalogo.png',
+		'shortandsweetlogo.png',
+		'snakeyesandboxcarlogo.png',
+		'twototangologo.png'
 	];
 	const Title = [
 		wordcrushtitle,
@@ -160,18 +162,7 @@
 		mysterypersonatitle,
 		shortandsweettitle,
 		snakeyesandboxcartitle,
-		twototangotitle,
-		doubledicederbytitle
-	];
-	const Brief = [
-		wordcrushbrief,
-		diecasterbrief,
-		nextbestbrief,
-		mysterypersonabrief,
-		shortandsweetbrief,
-		snakeyesandboxcarbrief,
-		twototangobrief,
-		doubledicederbybrief
+		twototangotitle
 	];
 	const Biline = [
 		wordcrushbiline,
@@ -180,8 +171,7 @@
 		mysterypersonabiline,
 		shortandsweetbiline,
 		snakeyesandboxcarbiline,
-		twototangobiline,
-		doubledicederbybiline
+		twototangobiline
 	];
 	const Details = [
 		wordcrushdetails,
@@ -190,8 +180,7 @@
 		mysterypersonadetails,
 		shortandsweetdetails,
 		snakeyesandboxcardetails,
-		twototangodetails,
-		doubledicederbydetails
+		twototangodetails
 	];
 
 	const ltGameLogoDisplaySm = document.getElementById('ltGameLogoDisplaySm');
@@ -207,7 +196,6 @@
 	const rtGameLogoDisplayLg = document.getElementById('rtGameLogoDisplayLg');
 
 	const gameTitle = document.getElementById('Title');
-	const gameBrief = document.getElementById('Brief');
 	const gameBiline = document.getElementById('Biline');
 	const gameDetails = document.getElementById('Details');
 
@@ -240,7 +228,7 @@
 
 		gameTitle.textContent = Title[ltGameCounter];
 		gameBiline.textContent = Biline[ltGameCounter];
-		gameBrief.innerHTML = Brief[ltGameCounter];
+		gameDetails.innerHTML = Details[ltGameCounter];
 	});
 
 	document.getElementById('rightArrow').addEventListener('click', () => {
@@ -272,7 +260,7 @@
 
 		gameTitle.textContent = Title[ltGameCounter];
 		gameBiline.textContent = Biline[ltGameCounter];
-		gameBrief.innerHTML = Brief[ltGameCounter];
+		gameDetails.innerHTML = Details[ltGameCounter];
 	});
 </script>
 
