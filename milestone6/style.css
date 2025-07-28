@@ -144,7 +144,7 @@ nav ul[id="hamnav"] {
     display: none;
     list-style-type: none;
     flex-flow: column nowrap;
-    margin: 0;
+    margin: 0 10px 0 0;
     padding: 0;
 }
 
@@ -176,20 +176,6 @@ nav ul[id="shortnav"] {
     flex-flow: row nowrap;
     list-style-type: none;
     display: none;
-}
-
-.menu {
-    display: none;
-}
-
-nav ul [class="menu"] {
-    margin: 0;
-}
-
-.menu.visible {
-    display: block;
-    list-style-type: none;
-    background-color: #e8e9f1;
 }
 
 .hamburger {
@@ -551,7 +537,7 @@ footer button {
     }
 
     .search-input {
-        width: 150px;
+        width: 100px;
     }
 
     #shopping-cart {

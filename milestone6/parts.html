@@ -6,6 +6,8 @@
 	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+	<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
 	<title>Beyond the Board</title>
 </head>
 
@@ -17,34 +19,38 @@
 		<div id="searchcartaccount" class="flex-cntr">
 			<form>
 				<div class="search">
-					<input class="search-input" type="search" placeholder="Product search…">
+					<input class="search-input" type="search" placeholder="Search…">
 					<button type="submit"><img src="magnify.png" alt="submit"></button>
 				</div>
 			</form>
-			<a href="cart.html"><img id="shopping-cart" src="shoppingcart.png" alt="cart"></a>
+			<div hidden id="snipcart"
+				data-api-key="YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw"></div>
+			<a href="#" class="snipcart-checkout">
+				<img id="shopping-cart" src="shoppingcart.png" alt="cart">
+				<span class="snipcart-items-count"></span>
+			</a>
 			<a href="account.html"><img id="account-icon" src="accounticon.png" alt="account"></a>
 		</div>
 		<nav>
-			<div class="hamburger" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<ul class="menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="browse.html">Browse</a></li>
-				<li><a href="newrelease.html">New</a></li>
-				<li><a href="deals.html">Deals</a></li>
-				<li><a href="parts.html">Parts</a></li>
-				<li><a href="aboutbtb.html">About</a></li>
+			<ul id="hamnav">
+				<li><a href="#">
+						<div class="hamburger">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</a>
+					<ul>
+						<li id="hamhome"><a href="index.html">Home</a></li>
+						<li><a href="browse.html#gameslink">Browse</a></li>
+						<li><a href="browse.html#newlink">New</a></li>
+						<li><a href="browse.html#dealslink">Deals</a></li>
+						<li><a href="parts.html">Parts</a></li>
+						<li><a href="aboutbtb.html">About</a></li>
+					</ul>
+				</li>
 			</ul>
-			<script>
-				function myFunction(x) {
-					x.classList.toggle("change");
-					document.querySelector(".menu").classList.toggle("visible");
-				}
-			</script>
-			<ul id=“longnav”>
+			<ul id="longnav">
 				<li id="longhome"><a href="index.html">Home</a></li>
 				<li><a href="browse.html#gameslink">Browse</a></li>
 				<li><a href="browse.html#newlink">New Releases</a></li>
@@ -53,8 +59,8 @@
 				<li><a href="aboutbtb.html">About BtB</a></li>
 			</ul>
 			<!-- shortened navigation list -->
-			<ul id=“shortnav”>
-				<li id="shorthome"><a href="index.html">Home</a></li>
+			<ul id="shortnav">
+				<li id=" shorthome"><a href="index.html">Home</a></li>
 				<li><a href="browse.html#gameslink">Browse</a></li>
 				<li><a href="browse.html#newlink">New</a></li>
 				<li><a href="browse.html#dealslink">Deals</a></li>
@@ -66,6 +72,11 @@
 		<main id="parts">
 			<table>
 				<tr>
+					<!--<picture>
+						<source media="(min-width:1200px)" srcset="wordcrushlogo-lg.png">
+						<source media="(min-width:768px)" srcset="wordcrushlogo-md.png">
+						<img src="wordcrushlogo-sm.png" alt="Word Crush" style="width:auto">
+					</picture>-->
 					<img src="wordcrushlogo-md.png" class="" alt="Brain crushing word game">
 					<caption>Word Crush</caption>
 					<th>Product</th>
