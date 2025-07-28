@@ -211,6 +211,14 @@ main[id="browse"] p {
     margin: 0;
 }
 
+#more {
+    display: none;
+}
+
+#morebtn {
+    background-color: #FECA64;
+}
+
 #parts {
     display: grid;
 }
