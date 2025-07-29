@@ -285,6 +285,10 @@ caption {
     text-align: center;
 }
 
+div [id="create-account"] {
+    margin-left: 300px;
+}
+
 div [id="create-account"] form {
     display: grid;
     grid-template-rows: auto;
@@ -296,7 +300,8 @@ div [id="create-account"] form {
 div [id="login-account"] {
     display: none;
     width: 600px;
-    margin: 0 auto;
+    margin-left: 300px;
+    /*margin: 0 auto;*/
 }
 
 div [id="login"] input {
