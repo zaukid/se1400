@@ -12,7 +12,7 @@ const twototangobiline = "Co-operative play 2-player dice game";
 
 const twototangodetails = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est";
 
-const twototangobrief = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const twototangobrief = "<b>Ages: 10+ Number of Players: 2 Playing Time: 10-20 min</b> Two to Tango is an exhilarating cooperative board game that challenges players to strategically outwit monstrous obstacles through teamwork and intuition.";
 
 const snakeyesandboxcartitle = "Snake Eyes & Box Cars";
 
@@ -28,7 +28,7 @@ const shortandsweetbiline = "Ultrafast co-operative dice & card challenge game";
 
 const shortandsweetdetails = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est";
 
-const shortandsweetbrief = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const shortandsweetbrief = "<b>Ages: 8+ Number of Players: 2+ Playing Time: 10-20 min</b> A fast-paced card game where players collect points by gathering candies, cookies, and cupcakes";
 
 const nextbesttitle = "Next Best";
 
@@ -36,7 +36,7 @@ const nextbestbiline = "Know enough about your friends to guess their 2nd favori
 
 const nextbestdetails = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est";
 
-const nextbestbrief = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const nextbestbrief = "<b>Ages: 8+ Number of Players: 3+ Playing Time: 20 min+</b> Invite your friends and family to join you for a thrilling and competitive game night.";
 
 const mysterypersonatitle = "Mystery Persona";
 
@@ -44,7 +44,7 @@ const mysterypersonabiline = "Multiplayer character guessing game with a twist";
 
 const mysterypersonadetails = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est";
 
-const mysterypersonabrief = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const mysterypersonabrief = "<b>Ages: 12+ Number of Players: 3+ Playing Time: 20+ min</b> Mystery Persona is an engaging and interactive guessing game that challenges guessing players to deduce the character chosen by the Picker using a combination of clever questions and strategic clues.";
 
 const diecastertitle = "Die Caster";
 
@@ -60,4 +60,4 @@ const doubledicederbybiline = "Multiplayer two-die token domination game";
 
 const doubledicederbydetails = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est";
 
-const doubledicederbybrief = "<b>Ages: X Number of Players: Y Playing Time: Z min</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+const doubledicederbybrief = "<b>Ages: 10+ Number of Players: 2-4 Playing Time: 20+ min</b> Experience the thrill of Double Dice Derby, a strategic dice game perfect for family game nights.";
