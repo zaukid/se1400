@@ -290,7 +290,7 @@ caption {
     text-align: center;
 }
 
-#login {
+main div [id="account"] {
     background-image: url(wallpaper.png);
     background-size: cover;
     background-repeat: no-repeat;
