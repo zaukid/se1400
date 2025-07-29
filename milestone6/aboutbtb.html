@@ -19,7 +19,7 @@
 		<div id="searchcartaccount" class="flex-cntr">
 			<form action="browse.html" onsubmit="return searchToBrowse()">
 				<div class="search">
-					<input class="search-input" type="search" placeholder="Search…">
+					<input class="search-input" type="search" placeholder="Search…" autofocus>
 					<button type="submit"><img src="magnify.png" alt="submit"></button>
 				</div>
 			</form>
@@ -115,9 +115,11 @@
 			<hr id="yellowband">
 			<hr id="blueband">
 			<h2>Stay in the know!</h2>
-			<div class="flex-cntr">
-				<input type="email" name="email" placeholder="  you@example.com">
-				<button type="submit">Submit</button>
+			<div>
+				<form class="flex-cntr" action="login.html" onsubmit="return searchToBrowse()">
+					<input type="email" name="email" placeholder="  you@example.com" required>
+					<button type="submit">Submit</button>
+				</form>
 			</div>
 		</footer>
 	</div>

@@ -2,8 +2,11 @@
     font-family: "Space Grotesk", sans-serif;
 }
 
-button:hover {
+button:hover,
+a:hover {
     cursor: pointer;
+    background-color: #FECA64;
+    transition: background-color 0.5s ease-out;
 }
 
 @font-face {
@@ -97,14 +100,6 @@ div[class="search"] button {
     position: relative;
     background-color: #e8e9f1;
     color: #1c8acc;
-    /*right: 10px;
-    bottom: 20px;
-    border: 40px;
-    border-radius: 50%;
-    margin-top: 25px;
-    margin-right: 10px;
-    font-size: 14px;
-    text-decoration: none;*/
 }
 
 #account-icon {
@@ -133,11 +128,6 @@ nav {
 nav a {
     text-decoration: none;
     color: #D91C9C;
-}
-
-nav a:hover {
-    background-color: #FECA64;
-    transition: background-color 0.5s ease-out;
 }
 
 nav ul li {
@@ -201,6 +191,14 @@ nav ul[id="shortnav"] {
     transition: 0.4s;
 }
 
+main {
+    background-color: white;
+    display: grid;
+    grid-area: 3 / 2 / 4 / 8;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(4, minmax(0px, auto));
+}
+
 #aboutbtb {
     display: block;
 }
@@ -231,11 +229,6 @@ main[id="browse"] button {
     border: 1px solid black;
     border-radius: 10%;
     background-color: #D6F0FF;
-}
-
-main[id="browse"] button:hover {
-    background-color: #FECA64;
-    transition: background-color 0.5s ease-out;
 }
 
 main[id="browse"] img {
@@ -295,13 +288,6 @@ caption {
     text-align: center;
 }
 
-main div [id="account"] {
-    background-image: url(wallpaper.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 div [id="create-account"] {
     margin-left: 300px;
     padding-bottom: 20px;
@@ -317,25 +303,16 @@ div [id="create-account"] form {
 
 div [id="login-account"] {
     display: none;
-    width: 600px;
     margin-left: 300px;
-    /*margin: 0 auto;*/
-}
-
-div [id="login"] input {
     font-size: 20pt;
-    padding: 40px;
+    padding: 20px;
     border-radius: 28px;
     border-color: black;
     background-color: white;
 }
 
-main {
-    background-color: white;
-    display: grid;
-    grid-area: 3 / 2 / 4 / 8;
-    grid-template-columns: subgrid;
-    grid-template-rows: repeat(4, minmax(0px, auto));
+#havebtn {
+    width: 200px;
 }
 
 main div[id="sellers"] {
@@ -482,11 +459,6 @@ footer button {
     border-radius: 10px;
     padding: 15px;
     margin: 0 20px;
-}
-
-footer button:hover {
-    background-color: #FECA64;
-    transition: background-color 0.5s ease-out;
 }
 
 @media screen and (max-width: 992px) {

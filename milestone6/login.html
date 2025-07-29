@@ -79,27 +79,27 @@
             <!-- shortened navigation list -->
         </nav>
         <main id="account">
-            <div class="createaccount" id="create-account">
+            <div id="create-account">
                 <h2>Create Account</h2>
-                <form method="post" onsubmit="return validateForm();" action="">
-                    <label for="myFname">First Name:</label>
-                    <input type="text" name="myFname" id="myFname" required>
-                    <label for=" myLname">Last Name:</label>
+                <form method="post" onsubmit="return validateForm();">
+                    <label for="myFname">*First Name:</label>
+                    <input type="text" name="myFname" id="myFname" required autofocus>
+                    <label for=" myLname">*Last Name:</label>
                     <input type="text" name="myLname" id="myLname" required>
                     <label for="myEmail">*Email:</label>
                     <input type="email" name="myEmail" id="myEmail" required>
                     <label for="myPhone">Phone:</label>
                     <input type="tel" name="myPhone" id="myPhone">
-                    <label for="myUsername">Username:</label>
+                    <label for="myUsername">*Username:</label>
                     <input type="text" id="myUsername" name="myUsername" required>
-                    <label for="myPassword">Password:</label>
+                    <label for="myPassword">*Password:</label>
                     <input type="password" id="myPassword" name="myPassword" required></input>
                     <input type="submit" id="mySubmit">
                 </form>
                 <br><br>
-                <button onclick="showLogin()">Already have an account?</button>
+                <button id="havebtn" onclick="showLogin()">Already have an account?</button>
             </div>
-            <div class="login" id="login-account">
+            <div id="login-account">
                 <h2>Login</h2>
                 <form>
                     <input type="text" placeholder="Username" required>
@@ -113,9 +113,11 @@
             <hr id="yellowband">
             <hr id="blueband">
             <h2>Stay in the know!</h2>
-            <div class="flex-cntr">
-                <input type="email" name="email" placeholder="  you@example.com">
-                <button type="submit">Submit</button>
+            <div>
+                <form class="flex-cntr" action="login.html" onsubmit="return searchToBrowse()">
+                    <input type="email" name="email" placeholder="  you@example.com" required>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </footer>
     </div>
