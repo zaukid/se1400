@@ -24,7 +24,7 @@
             <h1>Beyond the Board</h1>
         </header>
         <div id="searchcartaccount" class="flex-cntr">
-            <form action="browse.html" onsubmit="return searchToBrowse()">
+            <form>
                 <div class="search">
                     <input class="search-input" type="search" placeholder="Search…">
                     <button type="submit"><img src="magnify.png" alt="submit"></button>
@@ -120,32 +120,11 @@
         </footer>
     </div>
 </body>
+
 <script>
     function showLogin() {
         document.getElementById("login-account").style.display = "block";
         document.getElementById("create-account").style.display = "none";
-    }
-</script>
-<script>
-    const gameLinks = {
-        "word crush": "browse.html#wordcrushlink",
-        "die caster": "browse.html#diecasterlink",
-        "next best": "browse.html#nextbestlink",
-        "mystery persona": "browse.html#mysterypersonalink",
-        "short and sweet": "browse.html#shortandsweetlink",
-        "two to tango": "browse.html#twototangolink",
-        "snake eyes and box cars": "browse.html#snakeyesandboxcarlink",
-        "double dice derby": "browse.html#doubledicederbylink",
-    };
-
-    function searchToBrowse() {
-        const input = document.getElementById("searchInput").value.toLowerCase();
-        if (gameLinks[input]) {
-            window.location.href = gameLinks[input];
-        } else {
-            alert(`No match found for "${input}". Try 'Word Crush' or 'Die Caster'.`);
-        }
-        return false;
     }
 </script>
 
