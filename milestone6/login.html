@@ -83,17 +83,17 @@
                 <h2>Create Account</h2>
                 <form method="post" onsubmit="return validateForm();" action="">
                     <label for="myFname">First Name:</label>
-                    <input type="text" name="myFname" id="myFname">
+                    <input type="text" name="myFname" id="myFname" required>
                     <label for=" myLname">Last Name:</label>
-                    <input type="text" name="myLname" id="myLname">
+                    <input type="text" name="myLname" id="myLname" required>
                     <label for="myEmail">*Email:</label>
                     <input type="email" name="myEmail" id="myEmail" required>
                     <label for="myPhone">Phone:</label>
                     <input type="tel" name="myPhone" id="myPhone">
                     <label for="myUsername">Username:</label>
-                    <input type="text" id="myUsername" name="myUsername">
+                    <input type="text" id="myUsername" name="myUsername" required>
                     <label for="myPassword">Password:</label>
-                    <input type="password" id="myPassword" name="myPassword"></input>
+                    <input type="password" id="myPassword" name="myPassword" required></input>
                     <input type="submit" id="mySubmit">
                 </form>
                 <br><br>

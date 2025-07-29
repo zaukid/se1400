@@ -135,11 +135,6 @@ nav a {
     color: #D91C9C;
 }
 
-nav a:hover {
-    background-color: #FECA64;
-    transition: background-color 0.5s ease-out;
-}
-
 nav ul li {
     padding: 0 0.70em;
     white-space: nowrap;
@@ -290,16 +285,8 @@ caption {
     text-align: center;
 }
 
-#login {
-    background-image: url(wallpaper.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 div [id="create-account"] {
     margin-left: 300px;
-    padding-bottom: 20px;
 }
 
 div [id="create-account"] form {
@@ -537,7 +524,6 @@ footer button {
 
     nav ul[id="shortnav"] {
         display: flex;
-        padding-top: 15px;
     }
 
     main {
@@ -617,11 +603,6 @@ footer button {
 
     nav ul li {
         padding: 5px 0;
-    }
-
-    div [id="create-account"] {
-        margin: 0;
-        padding-bottom: 20px;
     }
 
     main {
