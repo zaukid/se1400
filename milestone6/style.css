@@ -285,6 +285,28 @@ caption {
     text-align: center;
 }
 
+div [id="create-account"] form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+div [id="login-account"] {
+    display: none;
+    width: 600px;
+    margin: 0 auto;
+}
+
+div [id="login"] input {
+    font-size: 20pt;
+    padding: 40px;
+    border-radius: 28px;
+    border-color: black;
+    background-color: white;
+}
+
 main {
     background-color: white;
     display: grid;
@@ -561,7 +583,7 @@ footer button {
     }
 
     nav {
-        position: relative;
+        position: sticky;
         grid-row: 2 / 3;
         grid-column: 1 / 3;
     }
