@@ -24,7 +24,7 @@
             <h1>Beyond the Board</h1>
         </header>
         <div id="searchcartaccount" class="flex-cntr">
-            <form onsubmit="return searchToBrowse()">
+            <form action="browse.html" onsubmit="return searchToBrowse()">
                 <div class="search">
                     <input class="search-input" type="search" placeholder="Search…">
                     <button type="submit"><img src="magnify.png" alt="submit"></button>
@@ -69,7 +69,7 @@
             </ul>
             <!-- shortened navigation list -->
             <ul id="shortnav">
-                <li id="shorthome"><a href="index.html">Home</a></li>
+                <li id=" shorthome"><a href="index.html">Home</a></li>
                 <li><a href="browse.html#gameslink">Browse</a></li>
                 <li><a href="browse.html#newlink">New</a></li>
                 <li><a href="browse.html#dealslink">Deals</a></li>
@@ -114,8 +114,8 @@
             <hr id="blueband">
             <h2>Stay in the know!</h2>
             <div>
-                <form class="flex-cntr" action="login.html#myEmail" onsubmit="return emailToLogin()">
-                    <input type="email" name="email" id="userEmail" placeholder="  you@example.com" required>
+                <form class="flex-cntr" action="login.html" onsubmit="return searchToBrowse()">
+                    <input type="email" name="email" placeholder="  you@example.com" required>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -129,59 +129,15 @@
     }
 </script>
 <script>
-    const inputVal = document.getElementById("userEmail");
-    let y = "";
-
-    function emailToLogin() {
-        y = inputVal.value;
-        localStorage.setItem('newEmail', y);
-    }
-</script>
-<script>
     const gameLinks = {
         "word crush": "browse.html#wordcrushlink",
-        "word": "browse.html#wordcrushlink",
-        "crush": "browse.html#wordcrushlink",
         "die caster": "browse.html#diecasterlink",
-        "die": "browse.html#diecasterlink",
-        "caster": "browse.html#diecasterlink",
         "next best": "browse.html#nextbestlink",
-        "next": "browse.html#nextbestlink",
-        "best": "browse.html#nextbestlink",
         "mystery persona": "browse.html#mysterypersonalink",
-        "mystery": "browse.html#mysterypersonalink",
-        "persona": "browse.html#mysterypersonalink",
         "short and sweet": "browse.html#shortandsweetlink",
-        "short sweet": "browse.html#shortandsweetlink",
-        "short": "browse.html#shortandsweetlink",
-        "sweet": "browse.html#shortandsweetlink",
         "two to tango": "browse.html#twototangolink",
-        "two tango": "browse.html#twototangolink",
-        "two": "browse.html#twototangolink",
-        "tango": "browse.html#twototangolink",
         "snake eyes and box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes and box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes and boxcars": "browse.html#snakeyesandboxcarlink",
-        "snake eyes and boxcars": "browse.html#snakeyesandboxcarlink",
-        "snake eyes & box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes": "browse.html#snakeyesandboxcarlink",
-        "snake eyes": "browse.html#snakeyesandboxcarlink",
-        "boxcars": "browse.html#snakeyesandboxcarlink",
-        "box cars": "browse.html#snakeyesandboxcarlink",
-        "box": "browse.html#snakeyesandboxcarlink",
-        "car": "browse.html#snakeyesandboxcarlink",
-        "cars": "browse.html#snakeyesandboxcarlink",
-        "snake": "browse.html#snakeyesandboxcarlink",
-        "eyes": "browse.html#snakeyesandboxcarlink",
-        "box": "browse.html#snakeyesandboxcarlink",
-        "cars": "browse.html#snakeyesandboxcarlink",
         "double dice derby": "browse.html#doubledicederbylink",
-        "double dice": "browse.html#doubledicederbylink",
-        "dice derby": "browse.html#doubledicederbylink",
-        "derby dice": "browse.html#doubledicederbylink",
-        "double": "browse.html#doubledicederbylink",
-        "dice": "browse.html#doubledicederbylink",
-        "derby": "browse.html#doubledicederbylink",
     };
 
     function searchToBrowse() {
@@ -193,12 +149,6 @@
         }
         return false;
     }
-</script>
-<script>
-    const outputVal = document.getElementById("myEmail");
-    let x = localStorage.getItem('newEmail');
-    outputVal.value = x;
-    localStorage.clear();
 </script>
 
 </html>
