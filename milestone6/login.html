@@ -2,20 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Create Account</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function validateForm() {
-            if (document.forms[0].myEmail.value == "") {
-                alert("Please enter an e-mail address.");
-                return false;
-            } // end if
-            return true;
-        } // end function validateForm
-    </script>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+	<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+	<title>Beyond the Board::Create Account</title>
 </head>
 
 <body>
@@ -24,14 +17,14 @@
             <h1>Beyond the Board</h1>
         </header>
         <div id="searchcartaccount" class="flex-cntr">
-            <form onsubmit="return searchToBrowse()">
-                <div class="search">
-                    <input class="search-input" type="search" placeholder="Search…">
-                    <button type="submit"><img src="magnify.png" alt="submit"></button>
-                </div>
-            </form>
+			<form onsubmit="return searchToBrowse()">
+				<div class="search">
+					<input class="search-input" id="searchInput" type="search" placeholder="Search…">
+					<button type="submit"><img src="magnify.png" alt="submit"></button>
+				</div>
+			</form>
             <div hidden id="snipcart"
-                data-api-key="YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw"></div>
+				data-api-key="YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw"></div>
             <a href="#" class="snipcart-checkout">
                 <img id="shopping-cart" src="shoppingcart.png" alt="cart">
                 <span class="snipcart-items-count"></span>
@@ -84,7 +77,7 @@
                 <form method="post" onsubmit="return validateForm();">
                     <label for="myFname">*First Name:</label>
                     <input type="text" name="myFname" id="myFname" required autofocus>
-                    <label for=" myLname">*Last Name:</label>
+                    <label for="myLname">*Last Name:</label>
                     <input type="text" name="myLname" id="myLname" required>
                     <label for="myEmail">*Email:</label>
                     <input type="email" name="myEmail" id="myEmail" required>
@@ -93,7 +86,7 @@
                     <label for="myUsername">*Username:</label>
                     <input type="text" id="myUsername" name="myUsername" required>
                     <label for="myPassword">*Password:</label>
-                    <input type="password" id="myPassword" name="myPassword" required></input>
+                    <input type="password" id="myPassword" name="myPassword" required>
                     <input type="submit" id="mySubmit">
                 </form>
                 <br><br>
@@ -121,84 +114,16 @@
             </div>
         </footer>
     </div>
+    <script src="script-search.js"></script>
+    <script src="constants.js"></script>
+    <script src="script-login.js"></script>
+    <script>
+    	const outputVal = document.getElementById("myEmail");
+    	let y = localStorage.getItem('newEmail');
+    	outputVal.value = y;
+    	localStorage.clear();
+    </script>
+    <script src="script-stayintouch.js"></script>
 </body>
-<script>
-    function showLogin() {
-        document.getElementById("login-account").style.display = "block";
-        document.getElementById("create-account").style.display = "none";
-    }
-</script>
-<script>
-    const inputVal = document.getElementById("userEmail");
-    let y = "";
-
-    function emailToLogin() {
-        y = inputVal.value;
-        localStorage.setItem('newEmail', y);
-    }
-</script>
-<script>
-    const gameLinks = {
-        "word crush": "browse.html#wordcrushlink",
-        "word": "browse.html#wordcrushlink",
-        "crush": "browse.html#wordcrushlink",
-        "die caster": "browse.html#diecasterlink",
-        "die": "browse.html#diecasterlink",
-        "caster": "browse.html#diecasterlink",
-        "next best": "browse.html#nextbestlink",
-        "next": "browse.html#nextbestlink",
-        "best": "browse.html#nextbestlink",
-        "mystery persona": "browse.html#mysterypersonalink",
-        "mystery": "browse.html#mysterypersonalink",
-        "persona": "browse.html#mysterypersonalink",
-        "short and sweet": "browse.html#shortandsweetlink",
-        "short sweet": "browse.html#shortandsweetlink",
-        "short": "browse.html#shortandsweetlink",
-        "sweet": "browse.html#shortandsweetlink",
-        "two to tango": "browse.html#twototangolink",
-        "two tango": "browse.html#twototangolink",
-        "two": "browse.html#twototangolink",
-        "tango": "browse.html#twototangolink",
-        "snake eyes and box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes and box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes and boxcars": "browse.html#snakeyesandboxcarlink",
-        "snake eyes and boxcars": "browse.html#snakeyesandboxcarlink",
-        "snake eyes & box cars": "browse.html#snakeyesandboxcarlink",
-        "snakeeyes": "browse.html#snakeyesandboxcarlink",
-        "snake eyes": "browse.html#snakeyesandboxcarlink",
-        "boxcars": "browse.html#snakeyesandboxcarlink",
-        "box cars": "browse.html#snakeyesandboxcarlink",
-        "box": "browse.html#snakeyesandboxcarlink",
-        "car": "browse.html#snakeyesandboxcarlink",
-        "cars": "browse.html#snakeyesandboxcarlink",
-        "snake": "browse.html#snakeyesandboxcarlink",
-        "eyes": "browse.html#snakeyesandboxcarlink",
-        "box": "browse.html#snakeyesandboxcarlink",
-        "cars": "browse.html#snakeyesandboxcarlink",
-        "double dice derby": "browse.html#doubledicederbylink",
-        "double dice": "browse.html#doubledicederbylink",
-        "dice derby": "browse.html#doubledicederbylink",
-        "derby dice": "browse.html#doubledicederbylink",
-        "double": "browse.html#doubledicederbylink",
-        "dice": "browse.html#doubledicederbylink",
-        "derby": "browse.html#doubledicederbylink",
-    };
-
-    function searchToBrowse() {
-        const input = document.getElementById("searchInput").value.toLowerCase();
-        if (gameLinks[input]) {
-            window.location.href = gameLinks[input];
-        } else {
-            alert(`No match found for "${input}". Try 'Word Crush' or 'Die Caster'.`);
-        }
-        return false;
-    }
-</script>
-<script>
-    const outputVal = document.getElementById("myEmail");
-    let x = localStorage.getItem('newEmail');
-    outputVal.value = x;
-    localStorage.clear();
-</script>
-
+    <script src="script-cart.js"></script>
 </html>

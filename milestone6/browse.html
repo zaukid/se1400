@@ -2,507 +2,501 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="robots" content="noindex, nofollow">
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-	<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-	<title>Beyond the Board</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css"/>
+    <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+    <title>Beyond the Board::Browse</title>
 </head>
 
 <body>
-	<div id="wrapper">
-		<header class="flex-cntr">
-			<h1>Beyond the Board</h1>
-		</header>
-		<div id="searchcartaccount" class="flex-cntr">
+    <div id="wrapper">
+        <header class="flex-cntr">
+            <h1>Beyond the Board</h1>
+        </header>
+        <div id="searchcartaccount" class="flex-cntr">
 			<form onsubmit="return searchToBrowse()">
 				<div class="search">
-					<input class="search-input" type="search" placeholder="Search…" autofocus>
+					<input class="search-input" id="searchInput" type="search" placeholder="Search…" autofocus>
 					<button type="submit"><img src="magnify.png" alt="submit"></button>
 				</div>
 			</form>
-			<div hidden id="snipcart"
+            <div hidden id="snipcart"
 				data-api-key="YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw"></div>
-			<a href="#" class="snipcart-checkout">
-				<img id="shopping-cart" src="shoppingcart.png" alt="cart">
-				<span class="snipcart-items-count"></span>
-			</a>
-			<a href="login.html">
-				<img id="account-icon" src="accounticon.png" alt="account">
-			</a>
-		</div>
-		<nav>
-			<ul id="hamnav">
-				<li><a href="#">
-						<div class="hamburger">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</div>
-					</a>
-					<ul>
-						<li id="hamhome"><a href="index.html">Home</a></li>
-						<li><a href="browse.html#gameslink">Browse</a></li>
-						<li><a href="browse.html#newlink">New</a></li>
-						<li><a href="browse.html#dealslink">Deals</a></li>
-						<li><a href="parts.html">Parts</a></li>
-						<li><a href="aboutbtb.html">About</a></li>
-					</ul>
-				</li>
-			</ul>
-			<ul id="longnav">
-				<li id="longhome"><a href="index.html">Home</a></li>
-				<li><a href="browse.html#gameslink">Browse</a></li>
-				<li><a href="browse.html#newlink">New Releases</a></li>
-				<li><a href="browse.html#dealslink">Deals</a></li>
-				<li><a href="parts.html">Parts</a></li>
-				<li><a href="aboutbtb.html">About BtB</a></li>
-			</ul>
-			<!-- shortened navigation list -->
-			<ul id="shortnav">
-				<li id="shorthome"><a href="index.html">Home</a></li>
-				<li><a href="browse.html#gameslink">Browse</a></li>
-				<li><a href="browse.html#newlink">New</a></li>
-				<li><a href="browse.html#dealslink">Deals</a></li>
-				<li><a href="parts.html">Parts</a></li>
-				<li><a href="aboutbtb.html">About</a></li>
-			</ul>
-			<!-- shortened navigation list -->
-		</nav>
-		<main id="browse">
-			<h2 class="ltrttxt" id="gameslink">All Games</h2>
-			<h2 class="ltrttxt"></h2>
-			<div>
-				<picture id="wordcrushlink">
-					<source media="(min-width:1200px)" srcset="wordcrushlogo-lg.png">
-					<source media="(min-width:768px)" srcset="wordcrushlogo-md.png">
-					<img src="wordcrushlogo-sm.png" alt="Word Crush" style="width:auto">
-				</picture>
-				<h2>Word Crush</h2>
-				<h3>Brain crippling word recall game</h3>
-				<h3>$34.99</h3>
-				<p class="txt18just"><b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min </b>Be the first to discard
-					your whole hand to win this brain taxing memory game.<span id="dots">...</span><span id="more"> Take
-						five minutes to learn the rules and set the game up.
-						Then let the grey matter get its workout in. A good memory is helpful, but to win you'll need to
-						plan ahead and make a few good strategic moves. Impress yourself and your friends by reciting a
-						long list of random words. Or forget a single word and watch your hand grow and your mind
-						shrivel. Players hold word cards in their hands which are played alphabetically as play
-						proceeds. Each time a player adds to the string of previously played cards, he must recite the
-						words on the cards beneath the one he's playing. But hold on! Words are not just alphabetical by
-						their first letter. They can also be played if their word contains a double of the active
-						letter. For example, if F is the active letter, FOGGY can be played, but so can CAFFEINE.
-						Players who fail to correctly recite the word stack add any unrecited words to their own hands.
-						Word Crush outcomes can become unpredictable and frustrating. Best laid plans can be laid to
-						waste in a moment. One forgotten or misremembered word cam mean inevitable defeat.
-						Extraordinarily competitive games can built word lists that cycle through the entire alphabet,
-						and then some. When you win a game of Word Crush, you'll leave feeling like it was all you. Lady
-						Luck had nothing to do with it.
-					</span></p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="word-crush" data-item-price="34.99"
-					data-item-description="Brain crushing word game" data-item-image="wordcrushlogo-sm.png"
-					data-item-name="Word Crush">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="diecasterlink">
-					<source media="(min-width:1200px)" srcset="diecasterlogo-lg.png">
-					<source media="(min-width:768px)" srcset="diecasterlogo-md.png">
-					<img src="diecasterlogo-sm.png" alt="Die Caster" style="width:auto">
-				</picture>
-				<h2>Die Caster</h2>
-				<h3>Fast-paced two-die casino Craps-style game</h3>
-				<h3>$34.99</h3>
-				<p class="txt18just"><b>Ages: 5+ Number of Players: 2+ Playing Time: 20+ min </b>Hold the highest chip
-					value at the end of the game to win this fast-paced,
-					easy-to-learn game.<span id="dots">...</span><span id="more"> Die Caster is a casino Craps-style
-						game with none of the
-						complexity, the player elimination or camaraderie. Players are pitted against each other, but
-						all complete against the roller. The rules are simple. After the roller's first two-dice roll,
-						the other players wager whether his second roll will be higher or lower than his first. Winners
-						are always paid what they wagered, and may change their bets right up to the moment the dice are
-						rolled. If the roller throws two equal rolls, he wins instead and gets all the chips on the
-						board. Play continues for a predetermined number of rounds, minutes, or maximum chip value. Die
-						Caster is entertaining but easy to learn for young and old alike. Children are introduced to the
-						concept of two dice roll probability. Trailing players are never truly out until they complete
-						their final rolls. Lead changes can happen rapidly and unexpectedly! Get Die Caster for your
-						game closet, but keep it on top! It takes only a minute or two to refreshen the rules if it's
-						been a while since you last played. It's the perfect game for family gatherings or game nights
-						with friends. Younger children can participate with minimal help from older siblings or
-						parents.
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="die-caster" data-item-price="34.99"
-					data-item-description="A gambling type game" data-item-image="diecasterlogo-sm.png"
-					data-item-name="Die Caster">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="nextbestlink">
-					<source media="(min-width:1200px)" srcset="nextbestlogo-lg.png">
-					<source media="(min-width:768px)" srcset="nextbestlogo-md.png">
-					<img src="nextbestlogo-sm.png" alt="Next Best" style="width:auto">
-				</picture>
-				<h2>Next Best</h2>
-				<h3>Know enough about your friends to guess their 2nd favorite thing</h3>
-				<h3>$24.99</h3>
-				<p class="txt18just"><b>Ages: 8+ Number of Players: 3+ Playing Time: 20 min+ </b> Invite your friends
-					and family to join you for a thrilling and competitive game night.<span id="dots">...</span><span
-						id="more"> In Next Best, the objective is to outsmart your opponents by predicting their top
-						choices while avoiding their number one selection. Each player receives a whiteboard and marker.
-						Shuffle the cards and place them in the
-						center. Draw two cards, select a prompt, and secretly jot down your top 5 answers. Other
-						players will attempt to guess your answers, but they must steer clear of your number one choice.
-						Earn points for each correct guess, but be cautious—guessing the top answer will deduct
-						points from your score! Simple, fast-paced, and endlessly entertaining, Next Best is suitable
-						for players of all ages.
-						With rounds lasting just 20 minutes to an hour, it is the perfect game for any gathering. Who
-						will emerge as the ultimate Next Best champion? Prepare to play and discover the answer!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="next-best" data-item-price="24.99"
-					data-item-description="Try not to guess the number 1 choice" data-item-image="nextbestlogo-sm.png"
-					data-item-name="Next Best">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="mysterypersonalink">
-					<source media="(min-width:1200px)" srcset="mysterypersonalogo-lg.png">
-					<source media="(min-width:768px)" srcset="mysterypersonalogo-md.png">
-					<img src="mysterypersonalogo-sm.png" alt="Mystery Persona" style="width:auto">
-				</picture>
-				<h2>Mystery Persona</h2>
-				<h3>Multiplayer character guessing game with a twist</h3>
-				<h3>$24.99</h3>
-				<p class="txt18just"> <b>Ages: 12+ Number of Players: 3+ Playing Time: 20+ min </b> Mystery Persona is
-					an engaging and interactive guessing game that challenges guessing
-					players to deduce the character chosen by the Picker using a combination of clever questions
-					and strategic clues.<span id="dots">...</span><span id="more"> With 50 Category Cards and 30 Clue
-						Cards, the game oﬀers endless
-						possibilities and replayability, ensuring that no two rounds are ever the same. Mystery Persona
-						is a Twenty Questions style game with an addictive scoring twist. The scoring strategy for the
-						Picker is to choose a person within the assigned category that is not too obscure nor too
-						obvious. If all guessers answer correctly, or all guessers answer incorrectly, the Picker scores
-						zero. The maximum scoring strategy for the Picker is to have all but one Guesser answer
-						incorrectly. Win or lose, you’ll learn something about yourself and your fellow players.
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="mystery-persona" data-item-price="24.99"
-					data-item-description="Deduce the chosen character using clues and questions"
-					data-item-image="mysterypersonalogo-sm.png" data-item-name="Mystery Persona">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="shortandsweetlink">
-					<source media="(min-width:1200px)" srcset="shortandsweetlogo-lg.png">
-					<source media="(min-width:768px)" srcset="shortandsweetlogo-md.png">
-					<img src="shortandsweetlogo-sm.png" alt="Short and Sweet" style="width:auto">
-				</picture>
-				<h2>Short and Sweet</h2>
-				<h3>Collect points with <i>sweeeeet</i> cards</h3>
-				<h3>$14.99</h3>
-				<p class="txt18just"><b>Ages: 8+ Number of Players: 2+ Playing Time: 10-20 min </b> A fast-paced card
-					game where players collect points by gathering candies, cookies, and cupcakes.<span
-						id="dots">...</span><span id="more"> With each turn, players can draw cards, play attack or
-						action cards to outsmart their opponents, and strategically manage their hand to maximize their
-						score. With simple rules and engaging gameplay, <i>Short and Sweet</i> is perfect for family
-						game
-						nights or friendly gatherings. Get ready to shuffle, draw, and savor the fun as you compete to
-						claim the sweetest victory!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="short-and-sweet" data-item-price="14.99"
-					data-item-description="Collect points with candies, cookies, and cupcakes card game"
-					data-item-image="shortandsweetlogo-sm.png" data-item-name="Short and Sweet">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="twototangolink">
-					<source media="(min-width:1200px)" srcset="twototangologo-lg.png">
-					<source media="(min-width:768px)" srcset="twototangologo-md.png">
-					<img src="twototangologo-sm.png" alt="Two To Tango" style="width:auto">
-				</picture>
-				<h2>Two To Tango</h2>
-				<h3>Team up, roll dice, and conquer monsters</h3>
-				<h3>$19.99</h3>
-				<p class="txt18just"><b>Ages: 10+ Number of Players: 2 Playing Time: 10-20 min </b> Two to Tango is an
-					exhilarating cooperative board game that challenges players to strategically outwit monstrous
-					obstacles through teamwork and intuition.<span id="dots">...</span><span id="more"> Players draw a
-						single Monster card and collaboratively decide if their combined dice rolls meet the card's
-						conditions—all without seeing each other's results. As the deck is exhausted, players face a
-						thrilling final opportunity to correct their mistakes, striving for victory or risking defeat.
-						Special Player cards add layers of complexity and strategy to every turn, ensuring no two games
-						are ever the same. Two to Tango promises hours of intense, partnership-driven fun that will keep
-						you and your friends on the edge of your seats!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="two-to-tango" data-item-price="19.99"
-					data-item-description="Team up, roll dice, and conquer monsters"
-					data-item-image="twototangologo-sm.png" data-item-name="Two to Tango">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="snakeyesandboxcarlink">
-					<source media="(min-width:1200px)" srcset="snakeyesandboxcarlogo-lg.png">
-					<source media="(min-width:768px)" srcset="snakeyesandboxcarlogo-md.png">
-					<img src="snakeyesandboxcarlogo-sm.png" alt="Snake Eyes & Box Cars" style="width:auto">
-				</picture>
-				<h2>Snake Eyes and Box Cars</h2>
-				<h3>Multiplayer elimination dice game</h3>
-				<h3>$9.99</h3>
-				<p class="txt18just"><b>Ages: 3+ Number of Players: 2-6 Playing Time: 10 min </b> Roll a 7 when your
-					score
-					is 7, or be the last eliminated to win Snake Eyes & Box
-					Cars.<span id="dots">...</span><span id="more"> This Yatzee!-style two-dice game pits players
-						against each
-						other in an elimination game of chance. There are only four easy rules to this game that result
-						in scores between -2 & 4 each turn. Players are eliminated when they reach -10. They win by
-						being the sole survivor or by rolling a 7 when their score is 7. Snake Eyes & Box Cars is easy
-						to learn for young children, and is fun for the whole family. Games are quick and entertaining.
-						Game form is small and perfect for travel.
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="9.99"
-					data-item-description="Roll dice, score points, and outlast opponents"
-					data-item-image="shortandsweetlogo-sm.png" data-item-name="Snake Eyes and Box Cars">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture id="doubledicederbylink">
-					<source media="(min-width:1200px)" srcset="doubledicederbylogo-lg.png">
-					<source media="(min-width:768px)" srcset="doubledicederbylogo-md.png">
-					<img src="doubledicederbylogo-sm.png" alt="Double Dice Derby" style="width:auto">
-				</picture>
-				<h2>Double Dice Derby</h2>
-				<h3>Multiplayer two-die token domination game</h3>
-				<h3>$24.99</h3>
-				<p class="txt18just"><b>Ages: 10+ Number of Players: 2-4 Playing Time: 20+ min </b> Experience the
-					thrill of Double Dice Derby, a strategic dice game perfect for family game
-					nights.<span id="dots">...</span><span id="more"> Roll dice, complete tasks, and place tokens to
-						win. DDD oﬀers endless fun and
-						replayability. Compete with friends for victory in this fast-paced game. To play, game board
-						spaces are supplied with linked task cards. As players complete the tasks, they place their
-						colored tokens inside the linked space. But only one token can be there at a time!
-						Opportunities arise allowing players to remove opponents’ tokens. Once a player covers all the
-						spaces, he wins! Don’t miss out on hours of entertainment! Play Double Dice Derby now and
-						see who comes out on top!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="24.99"
-					data-item-description="Roll dice, complete tasks, and place tokens to win"
-					data-item-image="doubledicederbylogo.png" data-item-name="Double Dice Derby">
-					Add to cart
-				</button>
-			</div>
-			<h2 class="ltrttxt" id="newlink">New Releases</h2>
-			<h2 class="ltrttxt"></h2>
-			<div>
-				<picture>
-					<source media="(min-width:1200px)" srcset="nextbestlogo-lg.png">
-					<source media="(min-width:768px)" srcset="nextbestlogo-md.png">
-					<img src="nextbestlogo-sm.png" alt="Next Best" style="width:auto">
-				</picture>
-				<h2>Next Best</h2>
-				<h3>Know enough about your friends to guess their 2nd favorite thing</h3>
-				<h3>$24.99</h3>
-				<p class="txt18just"><b>Ages: 8+ Number of Players: 3+ Playing Time: 20 min+ </b> Invite your friends
-					and family to join you for a thrilling and competitive game night.<span id="dots">...</span><span
-						id="more"> In Next Best, the objective is to outsmart your opponents by predicting their top
-						choices while avoiding their number one selection. Each player receives a whiteboard and marker.
-						Shuffle the cards and place them in the
-						center. Draw two cards, select a prompt, and secretly jot down your top 5 answers. Other
-						players will attempt to guess your answers, but they must steer clear of your number one choice.
-						Earn points for each correct guess, but be cautious—guessing the top answer will deduct
-						points from your score! Simple, fast-paced, and endlessly entertaining, Next Best is suitable
-						for players of all ages.
-						With rounds lasting just 20 minutes to an hour, it is the perfect game for any gathering. Who
-						will emerge as the ultimate Next Best champion? Prepare to play and discover the answer!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="next-best" data-item-price="24.99"
-					data-item-description="Try not to guess the number 1 choice" data-item-image="nextbestlogo-sm.png"
-					data-item-name="Next Best">
-					Add to cart
-				</button>
-			</div>
-			<div>
-				<picture>
-					<source media="(min-width:1200px)" srcset="shortandsweetlogo-lg.png">
-					<source media="(min-width:768px)" srcset="shortandsweetlogo-md.png">
-					<img src="shortandsweetlogo-sm.png" alt="Short and Sweet" style="width:auto">
-				</picture>
-				<h2>Short and Sweet</h2>
-				<h3>Collect points with <i>sweeeeet</i> cards</h3>
-				<h3>$14.99</h3>
-				<p class="txt18just"><b>Ages: 8+ Number of Players: 2+ Playing Time: 10-20 min </b> A fast-paced card
-					game where players collect points by gathering candies, cookies, and cupcakes.<span
-						id="dots">...</span><span id="more"> With each turn, players can draw cards, play attack or
-						action cards to outsmart their opponents, and strategically manage their hand to maximize their
-						score. With simple rules and engaging gameplay, <i>Short and Sweet</i> is perfect for family
-						game
-						nights or friendly gatherings. Get ready to shuffle, draw, and savor the fun as you compete to
-						claim the sweetest victory!
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="short-and-sweet" data-item-price="14.99"
-					data-item-description="Collect points with candies, cookies, and cupcakes card game"
-					data-item-image="shortandsweetlogo-sm.png" data-item-name="Short and Sweet">
-					Add to cart
-				</button>
-			</div>
-			<h2 class="ltrttxt" id="dealslink">Deals</h2>
-			<h2 class="ltrttxt"></h2>
-			<div>
-				<picture>
-					<source media="(min-width:1200px)" srcset="snakeyesandboxcarlogo-lg.png">
-					<source media="(min-width:768px)" srcset="snakeyesandboxcarlogo-md.png">
-					<img src="snakeyesandboxcarlogo-sm.png" alt="Snake Eyes & Box Cars" style="width:auto">
-				</picture>
-				<h2>Snake Eyes and Box Cars</h2>
-				<h3>Multiplayer elimination dice game</h3>
-				<h3>$9.99</h3>
-				<p class="txt18just"><b>Ages: 3+ Number of Players: 2-6 Playing Time: 10 min </b> Roll a 7 when your
-					score
-					is 7, or be the last eliminated to win Snake Eyes & Box
-					Cars..<span id="dots">...</span><span id="more"> This Yatzee!-style two-dice game pits players
-						against each
-						other in an elimination game of chance. There are only four easy rules to this game that result
-						in scores between -2 & 4 each turn. Players are eliminated when they reach -10. They win by
-						being the sole survivor or by rolling a 7 when their score is 7. Snake Eyes & Box Cars is easy
-						to learn for young children, and is fun for the whole family. Games are quick and entertaining.
-						Game form is small and perfect for travel.
-					</span>
-				</p>
-				<button onclick="myFunction(this)" id="morebtn">Read more</button><br>
-				<button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="9.99"
-					data-item-description="Roll dice, score points, and outlast opponents"
-					data-item-image="shortandsweetlogo-sm.png" data-item-name="Snake Eyes and Box Cars">
-					Add to cart
-				</button>
-			</div>
-		</main>
-		<footer>
-			<hr id="redband">
-			<hr id="yellowband">
-			<hr id="blueband">
-			<h2>Stay in the know!</h2>
-			<div>
-				<form class="flex-cntr" action="login.html#myEmail" onsubmit="return emailToLogin()">
-					<input type="email" name="email" id="userEmail" placeholder="  you@example.com" required>
-					<button type="submit">Submit</button>
-				</form>
-			</div>
-		</footer>
-	</div>
+            <a href="#" class="snipcart-checkout">
+                <img id="shopping-cart" src="shoppingcart.png" alt="cart">
+                <span class="snipcart-items-count"></span>
+            </a>
+            <a href="login.html">
+                <img id="account-icon" src="accounticon.png" alt="account">
+            </a>
+        </div>
+        <nav>
+            <ul id="hamnav">
+                <li>
+                    <a href="#">
+                        <div class="hamburger">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                    <ul>
+                        <li id="hamhome">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="browse.html#gameslink">Browse</a>
+                        </li>
+                        <li>
+                            <a href="browse.html#newlink">New</a>
+                        </li>
+                        <li>
+                            <a href="browse.html#dealslink">Deals</a>
+                        </li>
+                        <li>
+                            <a href="parts.html">Parts</a>
+                        </li>
+                        <li>
+                            <a href="aboutbtb.html">About</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="longnav">
+                <li id="longhome">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="browse.html#gameslink">Browse</a>
+                </li>
+                <li>
+                    <a href="browse.html#newlink">New Releases</a>
+                </li>
+                <li>
+                    <a href="browse.html#dealslink">Deals</a>
+                </li>
+                <li>
+                    <a href="parts.html">Parts</a>
+                </li>
+                <li>
+                    <a href="aboutbtb.html">About BtB</a>
+                </li>
+            </ul>
+            <!-- shortened navigation list -->
+            <ul id="shortnav">
+                <li id="shorthome">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="browse.html#gameslink">Browse</a>
+                </li>
+                <li>
+                    <a href="browse.html#newlink">New</a>
+                </li>
+                <li>
+                    <a href="browse.html#dealslink">Deals</a>
+                </li>
+                <li>
+                    <a href="parts.html">Parts</a>
+                </li>
+                <li>
+                    <a href="aboutbtb.html">About</a>
+                </li>
+            </ul>
+            <!-- shortened navigation list -->
+        </nav>
+        <main id="browse">
+            <h2 class="ltrttxt" id="gameslink">All Games</h2>
+            <h2 class="ltrttxt"></h2>
+            <div>
+                <picture id="wordcrushlink">
+                    <source media="(min-width:1200px)" srcset="wordcrushlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="wordcrushlogo-md.png">
+                    <img src="wordcrushlogo-sm.png" alt="Word Crush" style="width:auto">
+                </picture>
+                <h2>Word Crush</h2>
+                <h3>Brain crippling word recall game</h3>
+                <h3>$34.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 8+ Number of Players: 2+ Playing Time: 20+ min </b>
+                    Be the first to discard your whole hand to win this brain taxing memory game.
+                    <span id="dots">...</span>
+                    <span id="more"> Take
+                    						five minutes to learn the rules and set the game up.
+                    						Then let the grey matter get its workout in. A good memory is helpful, but to win you'll need to
+                    						plan ahead and make a few good strategic moves. Impress yourself and your friends by reciting a
+                    						long list of random words. Or forget a single word and watch your hand grow and your mind
+                    						shrivel. Players hold word cards in their hands which are played alphabetically as play
+                    						proceeds. Each time a player adds to the string of previously played cards, he must recite the
+                    						words on the cards beneath the one he's playing. But hold on! Words are not just alphabetical by
+                    						their first letter. They can also be played if their word contains a double of the active
+                    						letter. For example, if F is the active letter, FOGGY can be played, but so can CAFFEINE.
+                    						Players who fail to correctly recite the word stack add any unrecited words to their own hands.
+                    						Word Crush outcomes can become unpredictable and frustrating. Best laid plans can be laid to
+                    						waste in a moment. One forgotten or misremembered word cam mean inevitable defeat.
+                    						Extraordinarily competitive games can built word lists that cycle through the entire alphabet, and then some. When you win a game of Word Crush, you'll leave feeling like it was all you. Lady Luck had nothing to do with it.
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="word-crush" data-item-price="34.99" data-item-description="Brain crushing word game" data-item-image="wordcrushlogo-sm.png" data-item-name="Word Crush">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="diecasterlink">
+                    <source media="(min-width:1200px)" srcset="diecasterlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="diecasterlogo-md.png">
+                    <img src="diecasterlogo-sm.png" alt="Die Caster" style="width:auto">
+                </picture>
+                <h2>Die Caster</h2>
+                <h3>Fast-paced two-die casino Craps-style game</h3>
+                <h3>$34.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 5+ Number of Players: 2+ Playing Time: 20+ min </b>
+                    Hold the highest chip
+                    					value at the end of the game to win this fast-paced,
+                    					easy-to-learn game.
+                    <span id="dots">...</span>
+                    <span id="more"> Die Caster is a casino Craps-style
+                    						game with none of the
+                    						complexity, the player elimination or camaraderie. Players are pitted against each other, but
+                    						all complete against the roller. The rules are simple. After the roller's first two-dice roll,
+                    						the other players wager whether his second roll will be higher or lower than his first. Winners
+                    						are always paid what they wagered, and may change their bets right up to the moment the dice are
+                    						rolled. If the roller throws two equal rolls, he wins instead and gets all the chips on the
+                    						board. Play continues for a predetermined number of rounds, minutes, or maximum chip value. Die
+                    						Caster is entertaining but easy to learn for young and old alike. Children are introduced to the
+                    						concept of two dice roll probability. Trailing players are never truly out until they complete
+                    						their final rolls. Lead changes can happen rapidly and unexpectedly! Get Die Caster for your
+                    						game closet, but keep it on top! It takes only a minute or two to refreshen the rules if it's
+                    						been a while since you last played. It's the perfect game for family gatherings or game nights
+                    						with friends. Younger children can participate with minimal help from older siblings or
+                    						parents.
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="die-caster" data-item-price="34.99" data-item-description="A gambling type game" data-item-image="diecasterlogo-sm.png" data-item-name="Die Caster">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="nextbestlink">
+                    <source media="(min-width:1200px)" srcset="nextbestlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="nextbestlogo-md.png">
+                    <img src="nextbestlogo-sm.png" alt="Next Best" style="width:auto">
+                </picture>
+                <h2>Next Best</h2>
+                <h3>Know enough about your friends to guess their 2nd favorite thing</h3>
+                <h3>$24.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 8+ Number of Players: 3+ Playing Time: 20 min+ </b>
+                     Invite your friends
+                    					and family to join you for a thrilling and competitive game night.
+                    <span id="dots">...</span>
+                    <span id="more"> In Next Best, the objective is to outsmart your opponents by predicting their top
+                    						choices while avoiding their number one selection. Each player receives a whiteboard and marker.
+                    						Shuffle the cards and place them in the
+                    						center. Draw two cards, select a prompt, and secretly jot down your top 5 answers. Other
+                    						players will attempt to guess your answers, but they must steer clear of your number one choice.
+                    						Earn points for each correct guess, but be cautious—guessing the top answer will deduct
+                    						points from your score! Simple, fast-paced, and endlessly entertaining, Next Best is suitable
+                    						for players of all ages.
+                    						With rounds lasting just 20 minutes to an hour, it is the perfect game for any gathering. Who
+                    						will emerge as the ultimate Next Best champion? Prepare to play and discover the answer!
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="next-best" data-item-price="24.99" data-item-description="Try not to guess the number 1 choice" data-item-image="nextbestlogo-sm.png" data-item-name="Next Best">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="mysterypersonalink">
+                    <source media="(min-width:1200px)" srcset="mysterypersonalogo-lg.png">
+                    <source media="(min-width:768px)" srcset="mysterypersonalogo-md.png">
+                    <img src="mysterypersonalogo-sm.png" alt="Mystery Persona" style="width:auto">
+                </picture>
+                <h2>Mystery Persona</h2>
+                <h3>Multiplayer character guessing game with a twist</h3>
+                <h3>$24.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 12+ Number of Players: 3+ Playing Time: 20+ min </b>
+                     Mystery Persona is
+                    					an engaging and interactive guessing game that challenges guessing
+                    					players to deduce the character chosen by the Picker using a combination of clever questions
+                    					and strategic clues.
+                    <span id="dots">...</span>
+                    <span id="more"> With 50 Category Cards and 30 Clue
+                    						Cards, the game oﬀers endless
+                    						possibilities and replayability, ensuring that no two rounds are ever the same. Mystery Persona
+                    						is a Twenty Questions style game with an addictive scoring twist. The scoring strategy for the
+                    						Picker is to choose a person within the assigned category that is not too obscure nor too
+                    						obvious. If all guessers answer correctly, or all guessers answer incorrectly, the Picker scores
+                    						zero. The maximum scoring strategy for the Picker is to have all but one Guesser answer
+                    						incorrectly. Win or lose, you’ll learn something about yourself and your fellow players.
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="mystery-persona" data-item-price="24.99" data-item-description="Deduce the chosen character using clues and questions" data-item-image="mysterypersonalogo-sm.png" data-item-name="Mystery Persona">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="shortandsweetlink">
+                    <source media="(min-width:1200px)" srcset="shortandsweetlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="shortandsweetlogo-md.png">
+                    <img src="shortandsweetlogo-sm.png" alt="Short and Sweet" style="width:auto">
+                </picture>
+                <h2>Short and Sweet</h2>
+                <h3>
+                    Collect points with 
+                    <i>sweeeeet</i>
+                     cards
+                </h3>
+                <h3>$14.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 8+ Number of Players: 2+ Playing Time: 10-20 min </b>
+                     A fast-paced card
+                    					game where players collect points by gathering candies, cookies, and cupcakes.
+                    <span id="dots">...</span>
+                    <span id="more">
+                         With each turn, players can draw cards, play attack or
+                        						action cards to outsmart their opponents, and strategically manage their hand to maximize their
+                        						score. With simple rules and engaging gameplay, 
+                        <i>Short and Sweet</i>
+                         is perfect for family
+                        						game
+                        						nights or friendly gatherings. Get ready to shuffle, draw, and savor the fun as you compete to
+                        						claim the sweetest victory!
+                        					
+                    </span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="short-and-sweet" data-item-price="14.99" data-item-description="Collect points with candies, cookies, and cupcakes card game" data-item-image="shortandsweetlogo-sm.png" data-item-name="Short and Sweet">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="twototangolink">
+                    <source media="(min-width:1200px)" srcset="twototangologo-lg.png">
+                    <source media="(min-width:768px)" srcset="twototangologo-md.png">
+                    <img src="twototangologo-sm.png" alt="Two To Tango" style="width:auto">
+                </picture>
+                <h2>Two To Tango</h2>
+                <h3>Team up, roll dice, and conquer monsters</h3>
+                <h3>$19.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 10+ Number of Players: 2 Playing Time: 10-20 min </b>
+                     Two to Tango is an
+                    					exhilarating cooperative board game that challenges players to strategically outwit monstrous
+                    					obstacles through teamwork and intuition.
+                    <span id="dots">...</span>
+                    <span id="more"> Players draw a
+                    						single Monster card and collaboratively decide if their combined dice rolls meet the card's
+                    						conditions—all without seeing each other's results. As the deck is exhausted, players face a
+                    						thrilling final opportunity to correct their mistakes, striving for victory or risking defeat.
+                    						Special Player cards add layers of complexity and strategy to every turn, ensuring no two games
+                    						are ever the same. Two to Tango promises hours of intense, partnership-driven fun that will keep
+                    						you and your friends on the edge of your seats!
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="two-to-tango" data-item-price="19.99" data-item-description="Team up, roll dice, and conquer monsters" data-item-image="twototangologo-sm.png" data-item-name="Two to Tango">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="snakeyesandboxcarlink">
+                    <source media="(min-width:1200px)" srcset="snakeyesandboxcarlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="snakeyesandboxcarlogo-md.png">
+                    <img src="snakeyesandboxcarlogo-sm.png" alt="Snake Eyes & Box Cars" style="width:auto">
+                </picture>
+                <h2>Snake Eyes and Box Cars</h2>
+                <h3>Multiplayer elimination dice game</h3>
+                <h3>$9.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 3+ Number of Players: 2-6 Playing Time: 10 min </b>
+                     Roll a 7 when your
+                    					score
+                    					is 7, or be the last eliminated to win Snake Eyes & Box
+                    					Cars.
+                    <span id="dots">...</span>
+                    <span id="more"> This Yatzee!-style two-dice game pits players
+                    						against each
+                    						other in an elimination game of chance. There are only four easy rules to this game that result
+                    						in scores between -2 & 4 each turn. Players are eliminated when they reach -10. They win by
+                    						being the sole survivor or by rolling a 7 when their score is 7. Snake Eyes & Box Cars is easy
+                    						to learn for young children, and is fun for the whole family. Games are quick and entertaining.
+                    						Game form is small and perfect for travel.
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="9.99" data-item-description="Roll dice, score points, and outlast opponents" data-item-image="shortandsweetlogo-sm.png" data-item-name="Snake Eyes and Box Cars">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture id="doubledicederbylink">
+                    <source media="(min-width:1200px)" srcset="doubledicederbylogo-lg.png">
+                    <source media="(min-width:768px)" srcset="doubledicederbylogo-md.png">
+                    <img src="doubledicederbylogo-sm.png" alt="Double Dice Derby" style="width:auto">
+                </picture>
+                <h2>Double Dice Derby</h2>
+                <h3>Multiplayer two-die token domination game</h3>
+                <h3>$24.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 10+ Number of Players: 2-4 Playing Time: 20+ min </b>
+                     Experience the
+                    					thrill of Double Dice Derby, a strategic dice game perfect for family game
+                    					nights.
+                    <span id="dots">...</span>
+                    <span id="more"> Roll dice, complete tasks, and place tokens to
+                    						win. DDD oﬀers endless fun and
+                    						replayability. Compete with friends for victory in this fast-paced game. To play, game board
+                    						spaces are supplied with linked task cards. As players complete the tasks, they place their
+                    						colored tokens inside the linked space. But only one token can be there at a time!
+                    						Opportunities arise allowing players to remove opponents’ tokens. Once a player covers all the
+                    						spaces, he wins! Don’t miss out on hours of entertainment! Play Double Dice Derby now and
+                    						see who comes out on top!
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="24.99" data-item-description="Roll dice, complete tasks, and place tokens to win" data-item-image="doubledicederbylogo.png" data-item-name="Double Dice Derby">
+                					Add to cart
+                				</button>
+            </div>
+            <h2 class="ltrttxt" id="newlink">New Releases</h2>
+            <h2 class="ltrttxt"></h2>
+            <div>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="nextbestlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="nextbestlogo-md.png">
+                    <img src="nextbestlogo-sm.png" alt="Next Best" style="width:auto">
+                </picture>
+                <h2>Next Best</h2>
+                <h3>Know enough about your friends to guess their 2nd favorite thing</h3>
+                <h3>$24.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 8+ Number of Players: 3+ Playing Time: 20 min+ </b>
+                     Invite your friends
+                    					and family to join you for a thrilling and competitive game night.
+                    <span id="dots">...</span>
+                    <span id="more"> In Next Best, the objective is to outsmart your opponents by predicting their top
+                    						choices while avoiding their number one selection. Each player receives a whiteboard and marker.
+                    						Shuffle the cards and place them in the
+                    						center. Draw two cards, select a prompt, and secretly jot down your top 5 answers. Other
+                    						players will attempt to guess your answers, but they must steer clear of your number one choice.
+                    						Earn points for each correct guess, but be cautious—guessing the top answer will deduct
+                    						points from your score! Simple, fast-paced, and endlessly entertaining, Next Best is suitable
+                    						for players of all ages.
+                    						With rounds lasting just 20 minutes to an hour, it is the perfect game for any gathering. Who
+                    						will emerge as the ultimate Next Best champion? Prepare to play and discover the answer!
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="next-best" data-item-price="24.99" data-item-description="Try not to guess the number 1 choice" data-item-image="nextbestlogo-sm.png" data-item-name="Next Best">
+                					Add to cart
+                				</button>
+            </div>
+            <div>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="shortandsweetlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="shortandsweetlogo-md.png">
+                    <img src="shortandsweetlogo-sm.png" alt="Short and Sweet" style="width:auto">
+                </picture>
+                <h2>Short and Sweet</h2>
+                <h3>
+                    Collect points with 
+                    <i>sweeeeet</i>
+                     cards
+                </h3>
+                <h3>$14.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 8+ Number of Players: 2+ Playing Time: 10-20 min </b>
+                     A fast-paced card
+                    					game where players collect points by gathering candies, cookies, and cupcakes.
+                    <span id="dots">...</span>
+                    <span id="more">
+                         With each turn, players can draw cards, play attack or
+                        						action cards to outsmart their opponents, and strategically manage their hand to maximize their
+                        						score. With simple rules and engaging gameplay, 
+                        <i>Short and Sweet</i>
+                         is perfect for family
+                        						game
+                        						nights or friendly gatherings. Get ready to shuffle, draw, and savor the fun as you compete to
+                        						claim the sweetest victory!
+                        					
+                    </span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="short-and-sweet" data-item-price="14.99" data-item-description="Collect points with candies, cookies, and cupcakes card game" data-item-image="shortandsweetlogo-sm.png" data-item-name="Short and Sweet">
+                					Add to cart
+                				</button>
+            </div>
+            <h2 class="ltrttxt" id="dealslink">Deals</h2>
+            <h2 class="ltrttxt"></h2>
+            <div>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="snakeyesandboxcarlogo-lg.png">
+                    <source media="(min-width:768px)" srcset="snakeyesandboxcarlogo-md.png">
+                    <img src="snakeyesandboxcarlogo-sm.png" alt="Snake Eyes & Box Cars" style="width:auto">
+                </picture>
+                <h2>Snake Eyes and Box Cars</h2>
+                <h3>Multiplayer elimination dice game</h3>
+                <h3>$9.99</h3>
+                <p class="txt18just">
+                    <b>Ages: 3+ Number of Players: 2-6 Playing Time: 10 min </b>
+                     Roll a 7 when your
+                    					score
+                    					is 7, or be the last eliminated to win Snake Eyes & Box
+                    					Cars..
+                    <span id="dots">...</span>
+                    <span id="more"> This Yatzee!-style two-dice game pits players
+                    						against each
+                    						other in an elimination game of chance. There are only four easy rules to this game that result
+                    						in scores between -2 & 4 each turn. Players are eliminated when they reach -10. They win by
+                    						being the sole survivor or by rolling a 7 when their score is 7. Snake Eyes & Box Cars is easy
+                    						to learn for young children, and is fun for the whole family. Games are quick and entertaining.
+                    						Game form is small and perfect for travel.
+                    					</span>
+                </p>
+                <button onclick="myFunction(this)" id="morebtn">Read more</button>
+                <br>
+                <button class="snipcart-add-item" data-item-id="snake-eyes" data-item-price="9.99" data-item-description="Roll dice, score points, and outlast opponents" data-item-image="shortandsweetlogo-sm.png" data-item-name="Snake Eyes and Box Cars">
+                					Add to cart
+                				</button>
+            </div>
+        </main>
+        <footer>
+            <hr id="redband">
+            <hr id="yellowband">
+            <hr id="blueband">
+            <h2>Stay in the know!</h2>
+            <div>
+                <form class="flex-cntr" action="login.html#myEmail" onsubmit="return emailToLogin()">
+                    <input type="email" name="email" id="userEmail" placeholder="  you@example.com" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </footer>
+    </div>
+    <script src="script-search.js"></script>
+    <script src="constants.js"></script>
+    <script src="script-molessbtn.js"></script>
+    <script src="script-stayintouch.js"></script>
 </body>
-<script>
-	const inputVal = document.getElementById("userEmail");
-	let x = "";
-
-	function emailToLogin() {
-		x = inputVal.value;
-		localStorage.setItem('newEmail', x);
-	};
-</script>
-<script>
-	const gameLinks = {
-		"word crush": "browse.html#wordcrushlink",
-		"word": "browse.html#wordcrushlink",
-		"crush": "browse.html#wordcrushlink",
-		"die caster": "browse.html#diecasterlink",
-		"die": "browse.html#diecasterlink",
-		"caster": "browse.html#diecasterlink",
-		"next best": "browse.html#nextbestlink",
-		"next": "browse.html#nextbestlink",
-		"best": "browse.html#nextbestlink",
-		"mystery persona": "browse.html#mysterypersonalink",
-		"mystery": "browse.html#mysterypersonalink",
-		"persona": "browse.html#mysterypersonalink",
-		"short and sweet": "browse.html#shortandsweetlink",
-		"short sweet": "browse.html#shortandsweetlink",
-		"short": "browse.html#shortandsweetlink",
-		"sweet": "browse.html#shortandsweetlink",
-		"two to tango": "browse.html#twototangolink",
-		"two tango": "browse.html#twototangolink",
-		"two": "browse.html#twototangolink",
-		"tango": "browse.html#twototangolink",
-		"snake eyes and box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes and box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes and boxcars": "browse.html#snakeyesandboxcarlink",
-		"snake eyes and boxcars": "browse.html#snakeyesandboxcarlink",
-		"snake eyes & box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes": "browse.html#snakeyesandboxcarlink",
-		"snake eyes": "browse.html#snakeyesandboxcarlink",
-		"boxcars": "browse.html#snakeyesandboxcarlink",
-		"box cars": "browse.html#snakeyesandboxcarlink",
-		"box": "browse.html#snakeyesandboxcarlink",
-		"car": "browse.html#snakeyesandboxcarlink",
-		"cars": "browse.html#snakeyesandboxcarlink",
-		"snake": "browse.html#snakeyesandboxcarlink",
-		"eyes": "browse.html#snakeyesandboxcarlink",
-		"box": "browse.html#snakeyesandboxcarlink",
-		"cars": "browse.html#snakeyesandboxcarlink",
-		"double dice derby": "browse.html#doubledicederbylink",
-		"double dice": "browse.html#doubledicederbylink",
-		"dice derby": "browse.html#doubledicederbylink",
-		"derby dice": "browse.html#doubledicederbylink",
-		"double": "browse.html#doubledicederbylink",
-		"dice": "browse.html#doubledicederbylink",
-		"derby": "browse.html#doubledicederbylink",
-	};
-
-	function searchToBrowse() {
-		const input = document.getElementById("searchInput").value.toLowerCase();
-		if (gameLinks[input]) {
-			window.location.href = gameLinks[input];
-		} else {
-			alert(`No match found for "${input}". Try 'Word Crush' or 'Die Caster'.`);
-		}
-		return false;
-	};
-</script>
-<script>
-	window.SnipcartSettings = {
-		publicApiKey: "YzE5ODc2MGQtZTE0MC00MGQxLThhYzYtN2FiNDZiNzZmNmJjNjM4ODg5NjMyNTU1OTU4Mzgw",
-		loadStrategy: "on-user-interaction",
-	};
-	(function () { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var m, g; (g = (m = window.SnipcartSettings).loadCSS) != null || (m.loadCSS = !0); var y = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, f = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (f.forEach(function (t) { return document.addEventListener(t, o) }), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], n = document.querySelector("#snipcart"), i = document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][src$="snipcart.js"]')), e = document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, '"][href$="snipcart.css"]')); n || (n = document.createElement("div"), n.id = "snipcart", n.setAttribute("hidden", "true"), document.body.appendChild(n)), h(n), i || (i = document.createElement("script"), i.src = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.js"), i.async = !0, t.appendChild(i)), !e && window.SnipcartSettings.loadCSS && (e = document.createElement("link"), e.rel = "stylesheet", e.type = "text/css", e.href = "".concat(window.SnipcartSettings.protocol, "://").concat(window.SnipcartSettings.domain, "/themes/v").concat(window.SnipcartSettings.version, "/default/snipcart.css"), t.prepend(e)), f.forEach(function (v) { return document.removeEventListener(v, o) }) } function h(t) { !y || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
-</script>
-<script>
-	function myFunction(btn) {
-		const container = btn.previousElementSibling;
-		const dots = container.querySelector("#dots");
-		const moreText = container.querySelector("#more");
-
-		if (dots.style.display === "none") {
-			dots.style.display = "inline";
-			moreText.style.display = "none";
-			btn.innerHTML = "Read more";
-		} else {
-			dots.style.display = "none";
-			moreText.style.display = "inline";
-			btn.innerHTML = "Read less";
-		}
-	};
-</script>
-
+    <script src="script-cart.js"></script>
 </html>

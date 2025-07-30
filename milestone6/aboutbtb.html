@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
 	<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-	<title>Beyond the Board</title>
+	<title>Beyond the Board::About BtB</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 		<div id="searchcartaccount" class="flex-cntr">
 			<form onsubmit="return searchToBrowse()">
 				<div class="search">
-					<input class="search-input" type="search" placeholder="Search…" autofocus>
+					<input class="search-input" id="searchInput" type="search" placeholder="Search…" autofocus>
 					<button type="submit"><img src="magnify.png" alt="submit"></button>
 				</div>
 			</form>
@@ -71,7 +71,6 @@
 			</ul>
 			<!-- shortened navigation list -->
 		</nav>
-		<!--<div id="aboutbtb">-->
 		<main id="aboutbtb">
 			<h2>About Beyond the Board</h2>
 			<h4>Who We Are</h4>
@@ -111,7 +110,6 @@
 				<a href="feedback@btb.game">feedback@btb.game</a><br>
 			</p>
 		</main>
-		<!--</div>-->
 		<footer>
 			<hr id="redband">
 			<hr id="yellowband">
@@ -125,72 +123,9 @@
 			</div>
 		</footer>
 	</div>
+      <script src="script-search.js"></script>
+	<script src="constants.js"></script>
+      <script src="script-stayintouch.js"></script>
 </body>
-<script>
-	const inputVal = document.getElementById("userEmail");
-	let x = "";
-
-	function emailToLogin() {
-		x = inputVal.value;
-		localStorage.setItem('newEmail', x);
-	}
-</script>
-<script>
-	const gameLinks = {
-		"word crush": "browse.html#wordcrushlink",
-		"word": "browse.html#wordcrushlink",
-		"crush": "browse.html#wordcrushlink",
-		"die caster": "browse.html#diecasterlink",
-		"die": "browse.html#diecasterlink",
-		"caster": "browse.html#diecasterlink",
-		"next best": "browse.html#nextbestlink",
-		"next": "browse.html#nextbestlink",
-		"best": "browse.html#nextbestlink",
-		"mystery persona": "browse.html#mysterypersonalink",
-		"mystery": "browse.html#mysterypersonalink",
-		"persona": "browse.html#mysterypersonalink",
-		"short and sweet": "browse.html#shortandsweetlink",
-		"short sweet": "browse.html#shortandsweetlink",
-		"short": "browse.html#shortandsweetlink",
-		"sweet": "browse.html#shortandsweetlink",
-		"two to tango": "browse.html#twototangolink",
-		"two tango": "browse.html#twototangolink",
-		"two": "browse.html#twototangolink",
-		"tango": "browse.html#twototangolink",
-		"snake eyes and box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes and box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes and boxcars": "browse.html#snakeyesandboxcarlink",
-		"snake eyes and boxcars": "browse.html#snakeyesandboxcarlink",
-		"snake eyes & box cars": "browse.html#snakeyesandboxcarlink",
-		"snakeeyes": "browse.html#snakeyesandboxcarlink",
-		"snake eyes": "browse.html#snakeyesandboxcarlink",
-		"boxcars": "browse.html#snakeyesandboxcarlink",
-		"box cars": "browse.html#snakeyesandboxcarlink",
-		"box": "browse.html#snakeyesandboxcarlink",
-		"car": "browse.html#snakeyesandboxcarlink",
-		"cars": "browse.html#snakeyesandboxcarlink",
-		"snake": "browse.html#snakeyesandboxcarlink",
-		"eyes": "browse.html#snakeyesandboxcarlink",
-		"box": "browse.html#snakeyesandboxcarlink",
-		"cars": "browse.html#snakeyesandboxcarlink",
-		"double dice derby": "browse.html#doubledicederbylink",
-		"double dice": "browse.html#doubledicederbylink",
-		"dice derby": "browse.html#doubledicederbylink",
-		"derby dice": "browse.html#doubledicederbylink",
-		"double": "browse.html#doubledicederbylink",
-		"dice": "browse.html#doubledicederbylink",
-		"derby": "browse.html#doubledicederbylink",
-	};
-
-	function searchToBrowse() {
-		const input = document.getElementById("searchInput").value.toLowerCase();
-		if (gameLinks[input]) {
-			window.location.href = gameLinks[input];
-		} else {
-			alert(`No match found for "${input}". Try 'Word Crush' or 'Die Caster'.`);
-		}
-		return false;
-	};
-</script>
-
+      <script src="script-cart.js"></script>
 </html>
