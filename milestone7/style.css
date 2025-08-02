@@ -1,0 +1,647 @@
+* {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+    background-color: #FECA64;
+    transition: background-color 0.5s ease-out;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+.flex-cntr {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+}
+
+.txt18just {
+    color: #0F4768;
+    font-size: 18pt;
+    text-align: justify;
+    text-justify: auto;
+}
+
+header {
+    background-image: url(BtBLogo.png);
+    min-height: 120px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: #e8e9f1;
+    color: #000000;
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+header h1 {
+    margin: 0.25em 0 30px 150px;
+    font-size: 48pt;
+    font-weight: bold;
+}
+
+#searchcartaccount {
+    background-color: #e8e9f1;
+    grid-area: 1 / 5 / 2 / 9;
+}
+
+div[id="searchcartaccount"] form {
+    z-index: 2;
+    margin: 30px 30px 0 5px;
+    padding: 0;
+}
+
+.search {
+    width: max-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #D6F0FF;
+    border: 1px solid black;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 325px;
+}
+
+div[class="search"] button {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+#shopping-cart {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 20px;
+}
+
+.snipcart-items-count {
+    position: relative;
+    background-color: #e8e9f1;
+    color: #1c8acc;
+}
+
+#account-icon {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    top: 20px;
+}
+
+div[id="searchcartaccount"] a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #e8e9f1;
+    min-height: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    grid-area: 2 / 1 / 3 / 9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D91C9C;
+}
+
+nav ul li {
+    padding: 0 0.70em;
+    white-space: nowrap;
+}
+
+nav ul[id="hamnav"] {
+    display: none;
+    list-style-type: none;
+    flex-flow: column nowrap;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+nav ul[id="hamnav"] li ul {
+    display: none;
+    background-color: #e8e9f1;
+    list-style-type: none;
+    flex-flow: column nowrap;
+    position: absolute;
+    width: 100%;
+}
+
+nav ul[id="hamnav"] li:hover ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 10px;
+    margin: 0;
+}
+
+nav ul[id="longnav"] {
+    margin-top: 0.2em;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul[id="shortnav"] {
+    margin-top: 0.2em;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger {
+    visibility: hidden;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    height: 5px;
+    background-color: #D91C9C;
+    transition: 0.4s;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-area: 3 / 2 / 4 / 8;
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(4, minmax(0px, auto));
+}
+
+#aboutbtb {
+    display: block;
+}
+
+main[id="aboutbtb"] h2,
+main[id="browse"] h2 {
+    font-size: 32pt;
+    padding-top: 20px;
+}
+
+#browse {
+    display: grid;
+}
+
+main[id="browse"] {
+    padding-top: 20px;
+    column-gap: 35px;
+    grid-template-columns: auto auto;
+}
+
+main[id="browse"] h3 {
+    font-size: 20pt;
+    margin: 5px 0;
+}
+
+main[id="browse"] button {
+    margin: 0 0 25px 0;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: #D6F0FF;
+}
+
+main[id="browse"] img {
+    border: 4px solid black;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+main[id="browse"] p {
+    margin: 0;
+}
+
+#more {
+    display: none;
+}
+
+#morebtn {
+    background-color: #FECA64;
+}
+
+#parts {
+    display: grid;
+}
+
+main[id="parts"] {
+    grid-template-columns: auto auto;
+}
+
+main[id="parts"] img {
+    align-self: center;
+    border: 4px solid black;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+table {
+    margin: 20px 0 40px 0;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+td {
+    white-space: nowrap;
+    text-align: center;
+}
+
+caption {
+    bottom: 40px;
+    font-weight: bold;
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+}
+
+div[id="create-account"] {
+    margin-left: 300px;
+    padding-bottom: 20px;
+}
+
+div[id="create-account"] form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+div[id="login-account"] {
+    display: none;
+    margin-left: 300px;
+    font-size: 20pt;
+    padding: 20px;
+    border-radius: 28px;
+    border-color: black;
+    background-color: white;
+}
+
+#havebtn {
+    width: 200px;
+}
+
+main div[id="sellers"] {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.ltrttxt {
+    color: black;
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #FECA64;
+    text-decoration-thickness: 16px;
+}
+
+main div[id="LRarrows"] {
+    justify-content: flex-end;
+    grid-area: 1 / 4 / 2 / 7;
+}
+
+.ltrtbtn {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-top: 50px;
+    padding: 0 5px;
+}
+
+main div[id="previewsicons"] {
+    justify-content: center;
+    grid-area: 2 / 1 / 3 / 7;
+}
+
+main div img[alt="game1"] {
+    border: 4px solid black;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+main div img[alt="game2"] {
+    border: 4px solid black;
+    border-radius: 10%;
+    margin: 0 50px;
+    object-fit: contain;
+}
+
+main div img[alt="game3"] {
+    border: 4px solid black;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+.prevshadow {
+    box-shadow: 8px 8px #D91C9C;
+}
+
+main div[id="prevdesciptbutton"] {
+    grid-area: 3 / 1 / 4 / 7;
+}
+
+main h3 {
+    color: black;
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+main h4 {
+    color: black;
+    font-size: 28pt;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.detailbtn {
+    background-color: rgba(254, 202, 100, 0.73);
+    border: 2px solid #1C8ACD;
+    box-shadow: 4px 4px #1C8ACD;
+    border-radius: 40px;
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px 25px;
+}
+
+main p {
+    color: #0F4768;
+    font-size: 20pt;
+    text-align: left;
+    grid-area: 4 / 1 / 5 / 7;
+}
+
+footer {
+    background-color: white;
+    grid-area: 4 / 1 / 5 / 9;
+}
+
+#redband {
+    height: 10px;
+    background-color: #D91C9C;
+    margin: 0;
+    padding: 0;
+}
+
+#yellowband {
+    height: 10px;
+    background-color: #FECA64;
+    margin: 0;
+    padding: 0;
+}
+
+#blueband {
+    height: 10px;
+    background-color: #1C8ACD;
+    margin: 0;
+    padding: 0;
+}
+
+footer h2 {
+    color: black;
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer div {
+    margin: 0 auto 50px auto;
+    width: 525px;
+}
+
+footer input {
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+footer button {
+    font-size: 30px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 128px)) minmax(0px, 1fr);
+    }
+
+    header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 9;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+
+    #searchcartaccount {
+        grid-row: 2 / 3;
+        grid-column: 1 / 9;
+    }
+
+    div[id="searchcartaccount"] form {
+        margin: 30px 30px 0 40px;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    nav {
+        grid-row: 3 / 4;
+        grid-column: 1 / 9;
+    }
+
+    nav ul {
+        margin-left: 0;
+    }
+
+    nav ul li {
+        padding: 0 0.4em;
+    }
+
+    nav ul li[id="hamhome"] {
+        padding: 20px 0 0 0;
+    }
+
+    nav ul li[id="longhome"] {
+        padding: 0 0.4em 0 0;
+    }
+
+    nav ul li[id="shorthome"] {
+        padding: 0 0.4em 0 0;
+    }
+
+    nav ul[id="longnav"] {
+        display: none;
+    }
+
+    nav ul[id="shortnav"] {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    main {
+        grid-row: 4 / 5;
+        grid-column: 2 / 8;
+    }
+
+    footer {
+        grid-row: 5 / 6;
+        grid-column: 1 / 9;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 0 repeat(6, minmax(0, 128px)) 0;
+    }
+
+    header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 9;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        font-size: 36pt;
+    }
+
+    #searchcartaccount {
+        padding-top: 0;
+        flex-flow: row;
+        grid-row: 2 / 3;
+        grid-column: 3 / 9;
+    }
+
+    div[id="searchcartaccount"] form {
+        margin: 10px 0 0 0;
+    }
+
+    .search-input {
+        width: 100px;
+    }
+
+    #shopping-cart {
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #account-icon {
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
+    div[class="hamburger"] {
+        margin: 20px 0 0 25px;
+    }
+
+    nav {
+        position: sticky;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    nav ul[id="hamnav"] {
+        display: flex;
+    }
+
+    nav ul[id="shortnav"] {
+        display: none;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+    }
+
+    div[id="create-account"],
+    div[id="login-account"] {
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    main {
+        grid-row: 3 / 4;
+        grid-column: 2 / 8;
+    }
+
+    main[id="browse"] {
+        grid-template-columns: auto;
+    }
+
+    main[id="parts"] {
+        grid-template-columns: auto;
+    }
+
+    .imgHide {
+        display: none;
+    }
+
+    footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / 9;
+    }
+
+    footer h2 {
+        font-size: 30px;
+    }
+
+    footer div {
+        width: 350px;
+    }
+
+    footer input {
+        font-size: 20px;
+    }
+
+    footer button {
+        font-size: 20px;
+    }
+}
